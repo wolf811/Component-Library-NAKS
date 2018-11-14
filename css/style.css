@@ -1,10 +1,159 @@
 body {
-  font-family: 'Avenir Next Cyr', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  font-family: 'Avenir Next Cyr Regular', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 .footer {
-  /* position: absolute;
-    bottom: 0; */
   width: 100%;
   height: 60px;
   line-height: 60px;
   background-color: #f5f5f5; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Avenir Next Cyr Medium'; }
+
+.bd-navbar {
+  min-height: 4rem;
+  background: linear-gradient(227deg, #0066cc 28%, #0356a8 72%);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1); }
+  .bd-navbar .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem; }
+
+.bd-sidebar {
+  -ms-flex-order: 0;
+  order: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  @media (min-width: 768px) {
+    .bd-sidebar {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      height: 100vh;
+      border-right: 1px solid rgba(0, 0, 0, 0.1); } }
+  @media (min-width: 1200px) {
+    .bd-sidebar {
+      -ms-flex: 0 1 320px;
+      flex: 0 1 320px; } }
+
+.bd-search {
+  position: relative;
+  padding: 1rem 15px;
+  margin-right: -15px;
+  margin-left: -15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+
+.algolia-autocomplete {
+  display: block !important;
+  -ms-flex: 1;
+  flex: 1; }
+
+.bd-links {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: -15px;
+  margin-left: -15px; }
+  @media (min-width: 768px) {
+    .bd-links {
+      display: block !important;
+      max-height: calc(100vh - 9rem);
+      overflow-y: auto; } }
+
+.bd-content {
+  -ms-flex-order: 1;
+  order: 1; }
+
+.bd-title {
+  font-family: 'Avenir Next Cyr Demi';
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.bd-toc-item.active {
+  margin-bottom: 1rem; }
+  .bd-toc-item.active .bd-toc-link {
+    background-color: #fff;
+    border-right: 3px solid #007bff; }
+  .bd-toc-item.active .bd-sidenav {
+    display: block; }
+
+.bd-toc-link {
+  display: block;
+  padding: .25rem 1.5rem;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.85); }
+  .bd-toc-link:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.85);
+    border-right: 3px solid #007bff; }
+
+.bd-sidenav {
+  display: none; }
+
+/* .bd-sidebar .nav>.active:hover>a, .bd-sidebar .nav>.active>a {
+    font-weight: 500;
+    color: rgba(0,0,0,.85);
+    background-color: transparent;
+} */
+/* .bd-sidebar .nav>.active:hover>a,  */
+/* .bd-sidebar .active {
+    font-weight: 500;
+    color: rgba(0,0,0,.85);
+    background-color: transparent;
+} */
+.bd-sidebar li a {
+  display: block;
+  padding: .25rem 1.5rem;
+  font-size: 90%;
+  color: rgba(0, 0, 0, 0.65); }
+  .bd-sidebar li a:hover {
+    color: #007bff;
+    text-decoration: none;
+    border-right: 1px solid #007bff; }
+
+.bd-sidebar li.active a {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+  background-color: transparent; }
+  .bd-sidebar li.active a:hover {
+    color: inherit; }
+
+.highlight {
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f8f9fa;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+
+.bd-example {
+  position: relative;
+  padding: 1rem;
+  margin: 1rem -15px 0;
+  border: solid #f8f9fa;
+  border-width: .2rem 0 0; }
+  @media (min-width: 576px) {
+    .bd-example {
+      padding: 1.5rem;
+      margin-right: 0;
+      margin-left: 0;
+      border-width: .2rem; } }
+  .bd-example .bd-example-container {
+    min-width: 16rem;
+    max-width: 25rem;
+    margin-right: auto;
+    margin-left: auto; }
+    .bd-example .bd-example-container .bd-example-container-header {
+      height: 3rem;
+      margin-bottom: .5rem;
+      background-color: #fff;
+      border-radius: .25rem; }
+    .bd-example .bd-example-container .bd-example-container-sidebar {
+      float: right;
+      width: 4rem;
+      height: 8rem;
+      background-color: #80bdff;
+      border-radius: .25rem; }
+    .bd-example .bd-example-container .bd-example-container-body {
+      height: 8rem;
+      margin-right: 4.5rem;
+      background-color: #957bbe;
+      border-radius: .25rem; }
