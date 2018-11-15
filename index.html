@@ -26,24 +26,12 @@
                <li class="nav-item active">
                   <a class="nav-link" href="#">Документация</a>
                </li>
-         <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Макет</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Контент</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Компоненты</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Утилиты</a>
-                     </li> -->
                <li class="nav-item">
                   <a class="nav-link" href="#">Примеры</a>
                </li>
             </ul>
          </div>
-         
+
       </nav>
    </header>
 
@@ -53,28 +41,23 @@
             <form class="bd-search d-flex align-items-center">
                <span class="algolia-autocomplete">
                   <input type="search" class="form-control ds-input" id="search-input" placeholder="Поиск..." autocomplete="off">
-                  <!-- <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre> -->
-                  <!-- <span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; left: 0px; right: auto; display: none;"><div class="ds-dataset-1"></div></span> -->
                </span>
-              <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
-            </button>
+               <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+               </button>
             </form>
 
             <nav id="bd-docs-nav" class="collapse bd-links">
                <div class="bd-toc-item active">
-                  <a class="bd-toc-link" href="#">Макет</a>
-                  <ul class="nav bd-sidenav">
-                     <li class="active">
-                        <a href="#">Контейнеры</a>
+                  <a class="bd-toc-link" href="#item-1">Обзор</a>
+                  <ul class="nav bd-sidenav" role="tablist">
+                     <li class="nav-item">
+                        <a href="#item-1-1" class="nav-link">Контейнеры</a>
                      </li>
-                     <li>
-                        <a href="#">Точки останова (@media)</a>
+                     <li class="nav-item">
+                        <a href="#item-1-2" class="nav-link">Сетка (Grid system)</a>
                      </li>
-                     <li>
-                        <a href="#">Z-index</a>
-                     </li>
-                     <li>
-                        <a href="#">Сетка (Grid system)</a>
+                     <li class="nav-item">
+                        <a href="#item-1-3" class="nav-link">Медиа запросы (@media)</a>
                      </li>
                   </ul>
                </div>
@@ -92,60 +75,143 @@
          </div>
 
 
-         <main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
-               <h1 class="bd-title" id="item-1">Макет</h1>
-               <p>Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:</p>
-               <figure class="highlight">
-                  <pre>
-<code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;head&gt;</span>
-    <span class="c">&lt;!-- Required meta tags --&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span>
+         <main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" data-spy="scroll" data-target="bd-docs-nav" data-offset="0">
+            <div class="mb-5">
+               <h1 class="bd-title" id="item-1">Обзор</h1>
+               <p class="mb-0">Большинство компонентов и опций для создания проектов заимствовано из фреймворка <a href="http://getbootstrap.com/" target="_blank">Bootstrap 4</a>, включая контейнеры для упаковки элементов, сетку (grid system), медиа запросы (@media...), утилиты адаптивности и прочие полезности.</p>
+            </div>
+            
+            
+            <div class="mb-5">
+               <h3 id="item-1-1">Контейнеры</h3>
+               <p>Контейнеры являются основным элементом компоновки и требуются при использовании сетки по умолчанию. Можно выбрать из адаптивного контейнера с фиксированной шириной (<span class="text-danger text-monospace">max-width</span>) и контейнера шириной в <span class="text-danger text-monospace">100%</span> всего окна браузера.</p>
+               <p>Контейнеры могут быть вложенными, но в большинстве случаев этого не требуется.</p>
 
-    <span class="c">&lt;!-- Bootstrap CSS --&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
-
-    <span class="nt">&lt;title&gt;</span>Hello, world!<span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;/head&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
-
-    <span class="c">&lt;!-- Optional JavaScript --&gt;</span>
-    <span class="c">&lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://code.jquery.com/jquery-3.3.1.slim.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
-  <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code>
-</pre>
-</figure>
-               <h3>Контейнеры</h3>
-               <p>Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Choose from a responsive, fixed-width container (meaning its max-width changes at each breakpoint) or fluid-width (meaning it’s 100% wide all the time).</p>
-               <p>While containers can be nested, most layouts do not require a nested container.</p>
-               
                <div class="bd-example">
-  <div class="bd-example-container">
-    <div class="bd-example-container-header"></div>
-    <div class="bd-example-container-sidebar"></div>
-    <div class="bd-example-container-body"></div>
-  </div>
-</div>
+                  <div class="bd-example-container">
+                     <div class="mb-3">
+                        <p class="text-demi mb-2">Контейнер с фиксированной шириной</p>
+                        <p class="h5 text-secondary text-monospace">class = <span class="text-success">"container"</span></p>
+                     </div>
+                     <div class="bd-example-container-sidebar"></div>
+                     <div class="bd-example-container-body"></div>
+                  </div>
+               </div>
+               <div class="bd-example">
+                  <div class="bd-example-container bd-example-container-fluid">
+                     <div class="mb-3">
+                        <p class="text-demi mb-2">Контейнер с шириной в 100%</p>
+                        <p class="h5 text-secondary text-monospace">class = <span class="text-success">"container-fluid"</span></p>
+                     </div>
+                     <div class="bd-example-container-sidebar"></div>
+                     <div class="bd-example-container-body"></div>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="mb-5">
+               <h3 id="item-1-2">Сетка (Grid system)</h3>
+               <p>Система сетки построена с помощью <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background" target="_blank">Flexbox</a>, состоит из двенадцати колонок, использует серию контейнеров, строк и столбцов для компоновки и выравнивания содержимого. Ниже приведен пример и глубокий взгляд на то, как сетка объединяется.</p>
+               <div class="bd-example-row">
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-  <span class="c">&lt;!-- Content here --&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+               <div class="bd-example">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-sm">
+                           One of three columns
+                        </div>
+                        <div class="col-sm">
+                           One of three columns
+                        </div>
+                        <div class="col-sm">
+                           One of three columns
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="bd-clipboard"></div>
+               <figure class="highlight">
+                  <textarea class="form-control text-danger" rows="5">
+                                        <!-- =========================== -->
+                  </textarea>
+               </figure>
+
+               </div>
+               <p>В сетку входят пять уровней предопределенных классов для построения сложных адаптивных макетов. Настройте размер ваших колонок на дополнительных маленьких, малых, средних, больших или дополнительных больших устройствах, как вы считаете нужным.</p>
+               <div class="table-responsive">
+                  <table class="table table-bordered table-striped mb-0">
+                     <thead>
+                        <tr>
+                           <th></th>
+                           <th class="text-center">
+                              Extra small<br>
+                              <small>&lt;576px</small>
+                           </th>
+                           <th class="text-center">
+                              Small<br>
+                              <small>≥576px</small>
+                           </th>
+                           <th class="text-center">
+                              Medium<br>
+                              <small>≥768px</small>
+                           </th>
+                           <th class="text-center">
+                              Large<br>
+                              <small>≥992px</small>
+                           </th>
+                           <th class="text-center">
+                              Extra large<br>
+                              <small>≥1200px</small>
+                           </th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <th class="text-nowrap" scope="row">Max container width</th>
+                           <td>None (auto)</td>
+                           <td>540px</td>
+                           <td>720px</td>
+                           <td>960px</td>
+                           <td>1140px</td>
+                        </tr>
+                        <tr>
+                           <th class="text-nowrap" scope="row">Class prefix</th>
+                           <td><code>.col-</code></td>
+                           <td><code>.col-sm-</code></td>
+                           <td><code>.col-md-</code></td>
+                           <td><code>.col-lg-</code></td>
+                           <td><code>.col-xl-</code></td>
+                        </tr>
+                        <tr>
+                           <th class="text-nowrap" scope="row"># of columns</th>
+                           <td colspan="5">12</td>
+                        </tr>
+                        <tr>
+                           <th class="text-nowrap" scope="row">Gutter width</th>
+                           <td colspan="5">30px (15px on each side of a column)</td>
+                        </tr>
+                        <tr>
+                           <th class="text-nowrap" scope="row">Nestable</th>
+                           <td colspan="5">Yes</td>
+                        </tr>
+                        <tr>
+                           <th class="text-nowrap" scope="row">Column ordering</th>
+                           <td colspan="5">Yes</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               
+            </div>
+
+            <h3 id="item-1-2">Медиа запросы (@media)</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quisquam in atque voluptates odio quaerat, architecto dolores eveniet, iste repellendus quo tempora. Cupiditate quibusdam magnam inventore debitis mollitia quaerat est voluptatibus libero repellat aspernatur non repudiandae optio doloribus dolorum ea dicta, voluptatem corrupti. Sequi praesentium architecto alias delectus maiores similique!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quisquam in atque voluptates odio quaerat, architecto dolores eveniet, iste repellendus quo tempora. Cupiditate quibusdam magnam inventore debitis mollitia quaerat est voluptatibus libero repellat aspernatur non repudiandae optio doloribus dolorum ea dicta, voluptatem corrupti. Sequi praesentium architecto alias delectus maiores similique!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quisquam in atque voluptates odio quaerat, architecto dolores eveniet, iste repellendus quo tempora. Cupiditate quibusdam magnam inventore debitis mollitia quaerat est voluptatibus libero repellat aspernatur non repudiandae optio doloribus dolorum ea dicta, voluptatem corrupti. Sequi praesentium architecto alias delectus maiores similique!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quisquam in atque voluptates odio quaerat, architecto dolores eveniet, iste repellendus quo tempora. Cupiditate quibusdam magnam inventore debitis mollitia quaerat est voluptatibus libero repellat aspernatur non repudiandae optio doloribus dolorum ea dicta, voluptatem corrupti. Sequi praesentium architecto alias delectus maiores similique!</p>
+            
          </main>
       </div>
-      <!-- <h2>Библиотека компонентов</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam veritatis cumque. Eligendi provident corrupti ipsa iste tempora quibusdam accusamus, minima illum aliquid, aut labore laudantium enim, recusandae repellat ab, fugiat deleniti minus quae aspernatur eius. Alias voluptatum deserunt ratione laborum laboriosam minima repellendus animi iste aliquam fugit aperiam, perferendis?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam veritatis cumque. Eligendi provident corrupti ipsa iste tempora quibusdam accusamus, minima illum aliquid, aut labore laudantium enim, recusandae repellat ab, fugiat deleniti minus quae aspernatur eius. Alias voluptatum deserunt ratione laborum laboriosam minima repellendus animi iste aliquam fugit aperiam, perferendis?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam veritatis cumque. Eligendi provident corrupti ipsa iste tempora quibusdam accusamus, minima illum aliquid, aut labore laudantium enim, recusandae repellat ab, fugiat deleniti minus quae aspernatur eius. Alias voluptatum deserunt ratione laborum laboriosam minima repellendus animi iste aliquam fugit aperiam, perferendis?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam veritatis cumque. Eligendi provident corrupti ipsa iste tempora quibusdam accusamus, minima illum aliquid, aut labore laudantium enim, recusandae repellat ab, fugiat deleniti minus quae aspernatur eius. Alias voluptatum deserunt ratione laborum laboriosam minima repellendus animi iste aliquam fugit aperiam, perferendis?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nam veritatis cumque. Eligendi provident corrupti ipsa iste tempora quibusdam accusamus, minima illum aliquid, aut labore laudantium enim, recusandae repellat ab, fugiat deleniti minus quae aspernatur eius. Alias voluptatum deserunt ratione laborum laboriosam minima repellendus animi iste aliquam fugit aperiam, perferendis?</p> -->
-
    </div>
 
    <footer class="footer">
@@ -153,6 +219,7 @@
          <span class="text-muted">&copy; Библиотека НАКС, 2018-2019</span>
       </div>
    </footer>
+
    <!-- Optional JavaScript -->
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -161,6 +228,9 @@
 
    <!-- W3 -->
    <script src="js/w3.js"></script>
+
+   <!-- MyScript -->
+   <script src="js/script.js"></script>
 
 </body>
 </html>
