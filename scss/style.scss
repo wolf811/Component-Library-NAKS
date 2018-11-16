@@ -196,3 +196,25 @@ h1, h2, h3, h4, h5, h6 {
 	    max-width: none;
 	}
 }
+.bd-example-row {
+	.row>.col, .row>[class^=col-] {
+	    padding-top: .75rem;
+	    padding-bottom: .75rem;
+	    background-color: rgba(86,61,124,.15);
+	    border: 1px solid rgba(86,61,124,.2);
+	}
+	textarea {
+		outline: none !important;
+		resize: none;
+		border: none;
+		&:focus {
+			box-shadow: none;
+		}
+	}
+}
+/* .bd-example-row .row>.col, .bd-example-row .row>[class^=col-] {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+} */
