@@ -83,10 +83,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bd-toc-item.active {
+	margin-top: 1rem;
     margin-bottom: 1rem;
+    background-color: #fff;
 
     .bd-toc-link {
-		background-color: #fff;
+    	font-family: 'Avenir Next Cyr Demi';
+		/* background-color: #fff; */
 		border-right: 3px solid #007bff;
 	}
 	.bd-sidenav {

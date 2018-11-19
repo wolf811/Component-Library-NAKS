@@ -50,26 +50,62 @@
             </form>
 
             <nav id="bd-docs-nav" class="collapse bd-links">
-               <div class="bd-toc-item active">
-                  <a class="bd-toc-link" href="#item-1">Обзор</a>
-                  <ul class="nav bd-sidenav" role="tablist">
-                     <li class="nav-item">
-                        <a href="#item-1-1" class="nav-link">Контейнеры</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#item-1-2" class="nav-link">Сетка (Grid system)</a>
-                     </li>
-                     <!-- <li class="nav-item">
-                        <a href="#item-1-3" class="nav-link">Медиа запросы (@media)</a>
-                     </li> -->
-                  </ul>
+               <div class="bd-toc-item">
+                  <a class="bd-toc-link" href="index.html">Обзор</a>
                </div>
 
                <div class="bd-toc-item">
                   <a class="bd-toc-link" href="content.html">Контент</a>
                </div>
-               <div class="bd-toc-item">
-                  <a class="bd-toc-link" href="components.html">Компоненты</a>
+               <div class="bd-toc-item active">
+                  <a class="bd-toc-link" href="#item-3">Компоненты</a>
+                  <ul class="nav bd-sidenav" role="tablist">
+                     <li class="nav-item">
+                        <a href="#item-3-1" class="nav-link">Alerts (Оповещения)</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#item-3-2" class="nav-link">Badge (Ярлыки)</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#item-3-3" class="nav-link">Breadcrumb (Хлебные крошки)</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#item-3-4" class="nav-link">Buttons (Кнопки)</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#item-3-5" class="nav-link">Card (Карточки)</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#item-3-6" class="nav-link">Carousel (Карусель, слайдеры)</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#item-3-7" class="nav-link">Collapse (Панели, аккордеон)</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#item-3-8" class="nav-link">Dropdowns (Выпадающее меню)</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#item-3-9" class="nav-link">Forms (Формы, группы форм)</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#item-3-10" class="nav-link">Lists (Списки)</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#item-3-11" class="nav-link">Modal (Модальные окна)</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#item-3-12" class="nav-link">Navigation (Навигация, табы)</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#item-3-13" class="nav-link">Pagination</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#item-3-14" class="nav-link">Scrollspy</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#item-3-15" class="nav-link">Popovers, tooltips (Подсказки)</a>
+                     </li>
+                  </ul>
                </div>
                <div class="bd-toc-item">
                   <a class="bd-toc-link" href="utilits.html">Утилиты</a>
@@ -80,40 +116,93 @@
 
          <main role="main" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" data-spy="scroll" data-target="bd-docs-nav" data-offset="0">
             <div class="mb-5">
-               <h1 class="bd-title" id="item-1">Обзор</h1>
-               <p class="mb-0">Большинство компонентов и опций для создания проектов заимствовано из фреймворка <a href="http://getbootstrap.com/" target="_blank">Bootstrap 4</a>, включая контейнеры для упаковки элементов, сетку (grid system), медиа запросы (@media...), утилиты адаптивности и прочие полезности.</p>
+               <h1 class="bd-title" id="item-3">Компоненты</h1>
             </div>
             
             
             <div class="mb-5">
-               <h3 id="item-1-1">Контейнеры</h3>
-               <p>Контейнеры являются основным элементом компоновки и требуются при использовании сетки по умолчанию. Можно выбрать из адаптивного контейнера с фиксированной шириной (<span class="text-danger text-monospace">max-width</span>) и контейнера шириной в <span class="text-danger text-monospace">100%</span> всего окна браузера.</p>
-               <p>Контейнеры могут быть вложенными, но в большинстве случаев этого не требуется.</p>
+               <h3 id="item-3-1">Alerts (Оповещения)</h3>
+               <div class="bd-example-row mb-4">
+                  <div class="bd-example">
+                     <div class="alert alert-info mb-0" role="alert">
+                        Простое оповещение
+                     </div>
+                  </div>
+                  <div class="mb-3">
+                     <textarea class="form-control text-success rounded-0" wrap="off" rows="3" readonly>
 
-               <div class="bd-example">
-                  <div class="bd-example-container">
-                     <div class="mb-3">
-                        <p class="text-demi mb-2">Контейнер с фиксированной шириной</p>
-                        <p class="h5 text-secondary text-monospace">class = <span class="text-success">"container"</span></p>
-                     </div>
-                     <div class="bd-example-container-sidebar"></div>
-                     <div class="bd-example-container-body"></div>
+                        <div class="alert alert-secondary" role="alert">Простое оповещение</div>
+                     </textarea>
                   </div>
                </div>
-               <div class="bd-example">
-                  <div class="bd-example-container bd-example-container-fluid">
-                     <div class="mb-3">
-                        <p class="text-demi mb-2">Контейнер с шириной в 100%</p>
-                        <p class="h5 text-secondary text-monospace">class = <span class="text-success">"container-fluid"</span></p>
+               <div class="bd-example-row mb-4">
+                  <div class="bd-example">
+                     <div class="alert alert-info mb-0" role="alert">
+                        Простое оповещение <a href="#" class="alert-link">со ссылкой</a>
                      </div>
-                     <div class="bd-example-container-sidebar"></div>
-                     <div class="bd-example-container-body"></div>
+                  </div>
+                  <div class="mb-3">
+                     <textarea class="form-control text-success rounded-0" wrap="off" rows="3" readonly>
+
+                        <div class="alert alert-secondary" role="alert">Простое оповещение со ссылкой</div>
+                     </textarea>
+                  </div>
+               </div>
+               <p>Оповещения могут также содержать дополнительные элементы HTML, такие как заголовки, абзацы и разделители.</p>
+               <div class="bd-example-row mb-4">
+                  <div class="bd-example">
+                     <div class="alert alert-info mb-0" role="alert">
+                        <h4 class="alert-heading">Well done!</h4>
+                        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                        <hr>
+                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                     </div>
+                  </div>
+                  <div class="mb-3">
+                     <textarea class="form-control text-success rounded-0" wrap="off" rows="8" readonly>
+                        
+                        <div class="alert alert-secondary" role="alert">
+                           <h4 class="alert-heading">Well done!</h4>
+                           <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                           <hr>
+                           <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                        </div>
+                     </textarea>
+                  </div>
+               </div>
+               <p>Используя JavaScript, можно закрыть оповещение. Для этого необходимо:</p>
+               <ul>
+                  <li>Убедится, что вы загрузили необходимый Bootstrap плагин (alert plugin).</li>
+                  <li>Добавить кнопку закрытия с классами <span class="text-danger text-monospace">.alert-disissible</span> и <span class="text-danger text-monospace">.close</span>, которые размещают кнопку справа от текста оповещения.</li>
+                  <li>На кнопке «Закрыть» добавить атрибут <span class="text-danger text-monospace">data-reject = «alert»</span>, который запускает функции JavaScript. С атрибутом обязательно используйте элемент <code class="text-danger text-monospace">&lt;button&gt;</code> для правильного поведения на всех устройствах.</li>
+                  <li>Для анимации оповещения при закрытии обязательно используйте классы <span class="text-danger text-monospace">.fade</span> и <span class="text-danger text-monospace">.show</span>.</li>
+               </ul>
+               <p>Пример с анимацией:</p>
+               <div class="bd-example-row mb-4">
+                  <div class="bd-example">
+                     <div class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="mb-3">
+                     <textarea class="form-control text-success rounded-0" wrap="off" rows="8" readonly>
+                        
+                        <div class="alert alert-info alert-dismissible fade show" role="alert">
+                           <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                           </button>
+                        </div>
+                     </textarea>
                   </div>
                </div>
             </div>
             
             <div class="mb-5">
-               <h3 id="item-1-2">Сетка (Grid system)</h3>
+               <h3 id="item-3-2">Badge (Ярлыки)</h3>
                <p>Система сетки построена с помощью <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background" target="_blank">Flexbox</a>, состоит из двенадцати колонок, использует серию контейнеров, строк и столбцов для компоновки и выравнивания содержимого. Ниже приведен пример объеденения сетки.</p>
                <div class="bd-example-row">
                   <div class="bd-example">
