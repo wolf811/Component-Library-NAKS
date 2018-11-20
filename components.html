@@ -122,9 +122,10 @@
             
             <div class="mb-5">
                <h3 id="item-3-1">Alerts (Оповещения)</h3>
+               <h4 class="text-secondary">Простое оповещение</h4>
                <div class="bd-example-row mb-4">
                   <div class="bd-example">
-                     <div class="alert alert-info mb-0" role="alert">
+                     <div class="alert alert-secondary mb-0" role="alert">
                         Простое оповещение
                      </div>
                   </div>
@@ -137,7 +138,7 @@
                </div>
                <div class="bd-example-row mb-4">
                   <div class="bd-example">
-                     <div class="alert alert-info mb-0" role="alert">
+                     <div class="alert alert-secondary mb-0" role="alert">
                         Простое оповещение <a href="#" class="alert-link">со ссылкой</a>
                      </div>
                   </div>
@@ -148,10 +149,11 @@
                      </textarea>
                   </div>
                </div>
+               <h4 class="text-secondary">Оповещения с HTML</h4>
                <p>Оповещения могут также содержать дополнительные элементы HTML, такие как заголовки, абзацы и разделители.</p>
                <div class="bd-example-row mb-4">
                   <div class="bd-example">
-                     <div class="alert alert-info mb-0" role="alert">
+                     <div class="alert alert-secondary mb-0" role="alert">
                         <h4 class="alert-heading">Well done!</h4>
                         <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
                         <hr>
@@ -170,6 +172,7 @@
                      </textarea>
                   </div>
                </div>
+               <h4 class="text-secondary">Оповещения с функцией "закрытия"</h4>
                <p>Используя JavaScript, можно закрыть оповещение. Для этого необходимо:</p>
                <ul>
                   <li>Убедится, что вы загрузили необходимый Bootstrap плагин (alert plugin).</li>
@@ -180,25 +183,36 @@
                <p>Пример с анимацией:</p>
                <div class="bd-example-row mb-4">
                   <div class="bd-example">
-                     <div class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+                     <!-- <div class="alert alert-secondary alert-dismissible fade show mb-0" role="alert">
                         <strong>Holy guacamole!</strong> You should check in on some of those fields below.
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                            <span aria-hidden="true">&times;</span>
                         </button>
+                     </div> -->
+                     <div class="alert alert-secondary alert-dismissible fade show mb-0" role="alert"> 
+                        <p>Оповещение с функцией "закрытия"</p> 
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="checkbox text-muted check-notShow">
+                           <label><input type="checkbox"> Больше не показывать</label>
+                        </div>
                      </div>
                   </div>
                   <div class="mb-3">
-                     <textarea class="form-control text-success rounded-0" wrap="off" rows="8" readonly>
-                        
-                        <div class="alert alert-info alert-dismissible fade show" role="alert">
-                           <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                     <textarea class="form-control text-success rounded-0" wrap="off" rows="11" readonly>
+
+                        <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                           <p><strong>Holy guacamole!</strong> You should check in on some of those fields below.</p>
                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                            </button>
+                           <div class="checkbox text-muted check-notShow">
+                              <label><input type="checkbox"> Больше не показывать</label>
+                           </div>
                         </div>
                      </textarea>
                   </div>
                </div>
+               <p class="mb-0">Подробнее: <a href="http://getbootstrap.com/docs/4.1/components/alerts/" target="_blank">Bootstrap/Alerts&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
             </div>
             
             <div class="mb-5">

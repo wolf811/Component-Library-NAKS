@@ -179,6 +179,8 @@ h1, h2, h3, h4, h5, h6 {
   border: none; }
   .bd-example-row textarea:focus {
     box-shadow: none; }
+  .bd-example-row textarea[readonly] {
+    background-color: #f8f9fa; }
 
 /* .bd-example-row .row>.col, .bd-example-row .row>[class^=col-] {
     padding-top: .75rem;
