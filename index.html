@@ -15,7 +15,7 @@
    <link rel="stylesheet" href="fonts/AvenirNextCyr/font.css">
    <link rel="stylesheet" href="css/style.css">
 
-   <title>Library</title>
+   <title>Library NAKS</title>
 </head>
 <body>
    <header>
@@ -113,28 +113,41 @@
             </div>
             
             <div class="mb-5">
-               <h3 id="item-1-2">Сетка (Grid system)</h3>
+               <h3 id="item-1-2">Grid system (Сетка)</h3>
                <p>Система сетки построена с помощью <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background" target="_blank">Flexbox</a>, состоит из двенадцати колонок, использует серию контейнеров, строк и столбцов для компоновки и выравнивания содержимого. Ниже приведен пример объеденения сетки.</p>
                <div class="bd-example-row">
                   <div class="bd-example">
                      <div class="container">
                         <div class="row">
-                           <div class="col-sm">Одна из трех колонок</div>
-                           <div class="col-sm">Одна из трех колонок</div>
-                           <div class="col-sm">Одна из трех колонок</div>
+                           <div class="col-sm col-bg">Одна из трех колонок</div>
+                           <div class="col-sm col-bg">Одна из трех колонок</div>
+                           <div class="col-sm col-bg">Одна из трех колонок</div>
                         </div>
                      </div>
                   </div>
                   <div class="mb-3">
-                     <textarea class="form-control text-success rounded-0" wrap="off" rows="8" readonly>
-                        <div class="container">
-                           <div class="row">
-                              <div class="col-sm">Одна из трех колонок</div>
-                              <div class="col-sm">Одна из трех колонок</div>
-                              <div class="col-sm">Одна из трех колонок</div>
+                     <div class="card rounded-0">
+                        <div class="card-header" id="heading_01">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_01" aria-expanded="true" aria-controls="collapse_01"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_01" class="collapse" aria-labelledby="heading_01">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="9" readonly>
+
+                                 <div class="container">
+                                    <div class="row">
+                                       <div class="col-sm col-bg">Одна из трех колонок</div>
+                                       <div class="col-sm col-bg">Одна из трех колонок</div>
+                                       <div class="col-sm col-bg">Одна из трех колонок</div>
+                                    </div>
+                                 </div>
+                              </textarea>
                            </div>
                         </div>
-                     </textarea>
+                     </div>
                   </div>
                </div>
                <p>В сетку входят пять уровней предопределенных классов для построения сложных адаптивных макетов. Настройте размер ваших колонок на дополнительных маленьких, малых, средних, больших или дополнительных больших устройствах, как вы считаете нужным.</p>
@@ -202,9 +215,9 @@
                   </table>
                </div>
                
-               <p class="mb-0">Полная версия <a href="http://getbootstrap.com/docs/4.1/layout/grid/" target="_blank">Grid system Bootstrap&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
+               <p class="mb-0">Bootstrap: <a href="http://getbootstrap.com/docs/4.1/layout/grid/" target="_blank">Grid system&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
             </div>
-          
+
          </main>
       </div>
    </div>

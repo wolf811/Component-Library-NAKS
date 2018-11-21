@@ -15,7 +15,7 @@
    <link rel="stylesheet" href="fonts/AvenirNextCyr/font.css">
    <link rel="stylesheet" href="css/style.css">
 
-   <title>Library</title>
+   <title>Library NAKS</title>
 </head>
 <body>
    <header>
@@ -64,7 +64,7 @@
                         <a href="#item-3-1" class="nav-link">Alerts (Оповещения)</a>
                      </li>
                      <li class="nav-item">
-                        <a href="#item-3-2" class="nav-link">Badge (Ярлыки)</a>
+                        <a href="#item-3-2" class="nav-link">Badge (Значки)</a>
                      </li>
                      <li class="nav-item">
                         <a href="#item-3-3" class="nav-link">Breadcrumb (Хлебные крошки)</a>
@@ -119,7 +119,7 @@
                <h1 class="bd-title" id="item-3">Компоненты</h1>
             </div>
             
-            
+            <!-- Alerts -->
             <div class="mb-5">
                <h3 id="item-3-1">Alerts (Оповещения)</h3>
                <h4 class="text-secondary">Простое оповещение</h4>
@@ -130,10 +130,22 @@
                      </div>
                   </div>
                   <div class="mb-3">
-                     <textarea class="form-control text-success rounded-0" wrap="off" rows="3" readonly>
+                     <div class="card rounded-0">
+                        <div class="card-header" id="heading_01">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_01" aria-expanded="true" aria-controls="collapse_01"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
 
-                        <div class="alert alert-secondary" role="alert">Простое оповещение</div>
-                     </textarea>
+                        <div id="collapse_01" class="collapse" aria-labelledby="heading_01">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="3" readonly>
+
+                                 <div class="alert alert-secondary" role="alert">Простое оповещение</div>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
                <div class="bd-example-row mb-4">
@@ -143,10 +155,22 @@
                      </div>
                   </div>
                   <div class="mb-3">
-                     <textarea class="form-control text-success rounded-0" wrap="off" rows="3" readonly>
+                     <div class="card rounded-0">
+                        <div class="card-header" id="heading_02">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_02" aria-expanded="true" aria-controls="collapse_02"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
 
-                        <div class="alert alert-secondary" role="alert">Простое оповещение со ссылкой</div>
-                     </textarea>
+                        <div id="collapse_02" class="collapse" aria-labelledby="heading_02">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="3" readonly>
+
+                                 <div class="alert alert-secondary" role="alert">Простое оповещение со ссылкой</div>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
                <h4 class="text-secondary">Оповещения с HTML</h4>
@@ -161,15 +185,27 @@
                      </div>
                   </div>
                   <div class="mb-3">
-                     <textarea class="form-control text-success rounded-0" wrap="off" rows="8" readonly>
-                        
-                        <div class="alert alert-secondary" role="alert">
-                           <h4 class="alert-heading">Well done!</h4>
-                           <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                           <hr>
-                           <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                     <div class="card rounded-0">
+                        <div class="card-header" id="heading_03">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_03" aria-expanded="true" aria-controls="collapse_03"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
                         </div>
-                     </textarea>
+
+                        <div id="collapse_03" class="collapse" aria-labelledby="heading_03">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="8" readonly>
+
+                                 <div class="alert alert-secondary" role="alert">
+                                    <h4 class="alert-heading">Well done!</h4>
+                                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                                    <hr>
+                                    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                                 </div>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
                <h4 class="text-secondary">Оповещения с функцией "закрытия"</h4>
@@ -183,12 +219,6 @@
                <p>Пример с анимацией:</p>
                <div class="bd-example-row mb-4">
                   <div class="bd-example">
-                     <!-- <div class="alert alert-secondary alert-dismissible fade show mb-0" role="alert">
-                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                           <span aria-hidden="true">&times;</span>
-                        </button>
-                     </div> -->
                      <div class="alert alert-secondary alert-dismissible fade show mb-0" role="alert"> 
                         <p>Оповещение с функцией "закрытия"</p> 
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
@@ -198,116 +228,451 @@
                      </div>
                   </div>
                   <div class="mb-3">
-                     <textarea class="form-control text-success rounded-0" wrap="off" rows="11" readonly>
+                     <div class="card rounded-0">
+                        <div class="card-header" id="heading_04">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_04" aria-expanded="true" aria-controls="collapse_04"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
 
-                        <div class="alert alert-secondary alert-dismissible fade show" role="alert">
-                           <p><strong>Holy guacamole!</strong> You should check in on some of those fields below.</p>
-                           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                           </button>
-                           <div class="checkbox text-muted check-notShow">
-                              <label><input type="checkbox"> Больше не показывать</label>
+                        <div id="collapse_04" class="collapse" aria-labelledby="heading_04">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="11" readonly>
+
+                                 <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                                    <p><strong>Holy guacamole!</strong> You should check in on some of those fields below.</p>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                       <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <div class="checkbox text-muted check-notShow">
+                                       <label><input type="checkbox"> Больше не показывать</label>
+                                    </div>
+                                 </div>
+                              </textarea>
                            </div>
                         </div>
-                     </textarea>
+                     </div>
                   </div>
                </div>
-               <p class="mb-0">Подробнее: <a href="http://getbootstrap.com/docs/4.1/components/alerts/" target="_blank">Bootstrap/Alerts&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
-            </div>
+               <p class="mb-0">Bootstrap: <a href="http://getbootstrap.com/docs/4.1/components/alerts/" target="_blank">Alerts&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
+            </div> <!-- End Alerts -->
             
+            <!-- Badges -->
             <div class="mb-5">
-               <h3 id="item-3-2">Badge (Ярлыки)</h3>
-               <p>Система сетки построена с помощью <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background" target="_blank">Flexbox</a>, состоит из двенадцати колонок, использует серию контейнеров, строк и столбцов для компоновки и выравнивания содержимого. Ниже приведен пример объеденения сетки.</p>
+               <h3 id="item-3-2">Badge (Значки)</h3>
+               <h4 class="text-secondary">Примеры использования</h4>
+               <p>Значки могут располагаться вместе с любым элементом, например с заголовком.</p>
+               <div class="bd-example-row">
+                  <div class="bd-example">
+                     <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+                     <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+                     <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+                  </div>
+                  <div class="mb-3">
+                     <div class="card rounded-0">
+                        <div class="card-header" id="heading_05">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_05" aria-expanded="true" aria-controls="collapse_05"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_05" class="collapse" aria-labelledby="heading_05">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="5" readonly>
+
+                                 <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+                                 <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+                                 <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <p>Значки могут использоваться как часть ссылок или кнопок для создания счетчика.</p>
+               <div class="bd-example-row">
+                  <div class="bd-example">
+                     <button type="button" class="btn btn-secondary">
+                        Notifications <span class="badge badge-light">4</span>
+                     </button>
+                  </div>
+                  <div class="mb-3">
+                     <div class="card rounded-0">
+                        <div class="card-header" id="heading_06">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_06" aria-expanded="true" aria-controls="collapse_06"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_06" class="collapse" aria-labelledby="heading_06">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="5" readonly>
+
+                                 <button type="button" class="btn btn-secondary">
+                                    Notifications <span class="badge badge-light">4</span>
+                                 </button>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <p>Указав любой из указанных ниже классов-модификаторов можно менять внешний вид значка. Обернув значок тегом <code class="text-danger text-monospace">&lt;a&gt;</code> можно использовать его в качестве ссылки.</p>
                <div class="bd-example-row">
                   <div class="bd-example">
                      <div class="container">
                         <div class="row">
-                           <div class="col-sm">Одна из трех колонок</div>
-                           <div class="col-sm">Одна из трех колонок</div>
-                           <div class="col-sm">Одна из трех колонок</div>
+                           <div class="col-sm-6 mb-3 mb-sm-0">
+                              <p class="text-secondary mb-2">Использование классов-модификаторов</p>
+                              <div class="row">
+                                 <div class="col-sm-5">
+                                    <span class="badge badge-primary">Primary</span>
+                                    <span class="badge badge-secondary">Secondary</span>
+                                    <span class="badge badge-success">Success</span>
+                                 </div>
+                                 <div class="col-sm-7">
+                                    <span class="badge badge-pill badge-danger">Danger</span>
+                                    <span class="badge badge-pill badge-warning">Warning</span>
+                                    <span class="badge badge-pill badge-info">Info</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-6">
+                              <p class="text-secondary mb-2">Ссылки</p>
+                              <a href="#" class="badge badge-primary">Primary</a>
+                              <a href="#" class="badge badge-pill badge-secondary">Secondary</a>
+                              <a href="#" class="badge badge-success">Success</a>
+                              <a href="#" class="badge badge-pill badge-danger">Danger</a>
+                              <a href="#" class="badge badge-warning">Warning</a>
+                              <a href="#" class="badge badge-pill badge-info">Info</a>
+                           </div>
                         </div>
                      </div>
                   </div>
                   <div class="mb-3">
-                     <textarea class="form-control text-success rounded-0" wrap="off" rows="8" readonly>
-                        <div class="container">
-                           <div class="row">
-                              <div class="col-sm">Одна из трех колонок</div>
-                              <div class="col-sm">Одна из трех колонок</div>
-                              <div class="col-sm">Одна из трех колонок</div>
+                     <div class="card rounded-0">
+                        <div class="card-header" id="heading_07">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_07" aria-expanded="true" aria-controls="collapse_07"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_07" class="collapse" aria-labelledby="heading_07">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="16" readonly>
+
+                                 <span class="badge badge-primary">Primary</span>
+                                 <span class="badge badge-secondary">Secondary</span>
+                                 <span class="badge badge-success">Success</span>
+
+                                 <span class="badge badge-pill badge-danger">Danger</span>
+                                 <span class="badge badge-pill badge-warning">Warning</span>
+                                 <span class="badge badge-pill badge-info">Info</span>
+
+                                 <a href="#" class="badge badge-primary">Primary</a>
+                                 <a href="#" class="badge badge-pill badge-secondary">Secondary</a>
+                                 <a href="#" class="badge badge-success">Success</a>
+                                 <a href="#" class="badge badge-pill badge-danger">Danger</a>
+                                 <a href="#" class="badge badge-warning">Warning</a>
+                                 <a href="#" class="badge badge-pill badge-info">Info</a>
+                              </textarea>
                            </div>
                         </div>
-                     </textarea>
+                     </div>
                   </div>
                </div>
-               <p>В сетку входят пять уровней предопределенных классов для построения сложных адаптивных макетов. Настройте размер ваших колонок на дополнительных маленьких, малых, средних, больших или дополнительных больших устройствах, как вы считаете нужным.</p>
-               <div class="table-responsive">
-                  <table class="table table-bordered table-striped">
-                     <thead>
-                        <tr>
-                           <th></th>
-                           <th class="text-center">
-                              Extra small<br>
-                              <small>&lt;576px</small>
-                           </th>
-                           <th class="text-center">
-                              Small<br>
-                              <small>≥576px</small>
-                           </th>
-                           <th class="text-center">
-                              Medium<br>
-                              <small>≥768px</small>
-                           </th>
-                           <th class="text-center">
-                              Large<br>
-                              <small>≥992px</small>
-                           </th>
-                           <th class="text-center">
-                              Extra large<br>
-                              <small>≥1200px</small>
-                           </th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <th class="text-nowrap" scope="row">Max container width</th>
-                           <td>None (auto)</td>
-                           <td>540px</td>
-                           <td>720px</td>
-                           <td>960px</td>
-                           <td>1140px</td>
-                        </tr>
-                        <tr>
-                           <th class="text-nowrap" scope="row">Class prefix</th>
-                           <td><code>.col-</code></td>
-                           <td><code>.col-sm-</code></td>
-                           <td><code>.col-md-</code></td>
-                           <td><code>.col-lg-</code></td>
-                           <td><code>.col-xl-</code></td>
-                        </tr>
-                        <tr>
-                           <th class="text-nowrap" scope="row"># of columns</th>
-                           <td colspan="5">12</td>
-                        </tr>
-                        <tr>
-                           <th class="text-nowrap" scope="row">Gutter width</th>
-                           <td colspan="5">30px (15px on each side of a column)</td>
-                        </tr>
-                        <tr>
-                           <th class="text-nowrap" scope="row">Nestable</th>
-                           <td colspan="5">Yes</td>
-                        </tr>
-                        <tr>
-                           <th class="text-nowrap" scope="row">Column ordering</th>
-                           <td colspan="5">Yes</td>
-                        </tr>
-                     </tbody>
-                  </table>
+               <p class="mb-0">Bootstrap: <a href="http://getbootstrap.com/docs/4.1/components/badge/" target="_blank">Badges&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
+            </div> <!-- End Badges -->
+            
+            <!-- Breadcrumb -->
+            <div class="mb-5">
+               <h3 id="item-3-3">Breadcrumb (Хлебные крошки)</h3>
+               <div class="bd-example-row">
+                  <div class="bd-example">
+                     <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                           <li class="breadcrumb-item active" aria-current="page">Home</li>
+                        </ol>
+                     </nav>
+
+                     <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                           <li class="breadcrumb-item"><a href="#">Home</a></li>
+                           <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                     </nav>
+
+                     <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                           <li class="breadcrumb-item"><a href="#">Home</a></li>
+                           <li class="breadcrumb-item"><a href="#">Library</a></li>
+                           <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                     </nav>
+                  </div>
+                  <div class="mb-3">
+                     <div class="card rounded-0">
+                        <div class="card-header" id="heading_08">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_08" aria-expanded="true" aria-controls="collapse_08"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_08" class="collapse" aria-labelledby="heading_08">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="22" readonly>
+
+                                 <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                       <li class="breadcrumb-item active" aria-current="page">Home</li>
+                                    </ol>
+                                 </nav>
+
+                                 <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                       <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                       <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                    </ol>
+                                 </nav>
+
+                                 <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                       <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                       <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                       <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                    </ol>
+                                 </nav>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
                </div>
-               
-               <p class="mb-0">Полная версия <a href="http://getbootstrap.com/docs/4.1/layout/grid/" target="_blank">Grid system Bootstrap&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
-            </div>
-          
+               <p class="mb-0">Bootstrap: <a href="http://getbootstrap.com/docs/4.1/components/breadcrumb/" target="_blank">Breadcrumb&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
+            </div> <!-- End Breadcrumb -->
+            
+            <!-- Buttons, button group -->
+            <div class="mb-5">
+               <h3 id="item-3-4">Buttons (Кнопки)</h3>
+               <div class="bd-example-row">
+                  <div class="bd-example">
+                     <button type="button" class="btn btn-primary">Primary</button>
+                     <button type="button" class="btn btn-secondary">Secondary</button>
+                     <button type="button" class="btn btn-success">Success</button>
+                     <button type="button" class="btn btn-danger">Danger</button>
+                     <button type="button" class="btn btn-warning">Warning</button>
+                     <button type="button" class="btn btn-info">Info</button>
+                     <button type="button" class="btn btn-light">Light</button>
+                     <button type="button" class="btn btn-dark">Dark</button>
+
+                     <button type="button" class="btn btn-link">Link</button>
+                     <div class="w-100 mb-3"></div>
+                     <button type="button" class="btn btn-outline-primary">Primary</button>
+                     <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                     <button type="button" class="btn btn-outline-success">Success</button>
+                     <button type="button" class="btn btn-outline-danger">Danger</button>
+                     <button type="button" class="btn btn-outline-warning">Warning</button>
+                     <button type="button" class="btn btn-outline-info">Info</button>
+                     <button type="button" class="btn btn-outline-light">Light</button>
+                     <button type="button" class="btn btn-outline-dark">Dark</button>
+                  </div>
+                  <div class="mb-3">
+                     <div class="card rounded-0">
+                        <div class="card-header" id="heading_09">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_09" aria-expanded="true" aria-controls="collapse_09"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_09" class="collapse" aria-labelledby="heading_09">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
+
+                                 <button type="button" class="btn btn-primary">Primary</button>
+                                 <button type="button" class="btn btn-secondary">Secondary</button>
+                                 <button type="button" class="btn btn-success">Success</button>
+                                 <button type="button" class="btn btn-danger">Danger</button>
+                                 <button type="button" class="btn btn-warning">Warning</button>
+                                 <button type="button" class="btn btn-info">Info</button>
+                                 <button type="button" class="btn btn-light">Light</button>
+                                 <button type="button" class="btn btn-dark">Dark</button>
+                                 <button type="button" class="btn btn-link">Link</button>
+
+                                 <button type="button" class="btn btn-outline-primary">Primary</button>
+                                 <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                 <button type="button" class="btn btn-outline-success">Success</button>
+                                 <button type="button" class="btn btn-outline-danger">Danger</button>
+                                 <button type="button" class="btn btn-outline-warning">Warning</button>
+                                 <button type="button" class="btn btn-outline-info">Info</button>
+                                 <button type="button" class="btn btn-outline-light">Light</button>
+                                 <button type="button" class="btn btn-outline-dark">Dark</button>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="bd-example-row">
+                  <div class="bd-example">
+                     <a class="btn btn-primary" href="#" role="button">Link</a>
+                     <button class="btn btn-primary" type="submit">Button</button>
+                     <input class="btn btn-primary" type="button" value="Input">
+                     <input class="btn btn-primary" type="submit" value="Submit">
+                     <input class="btn btn-primary" type="reset" value="Reset">
+                  </div>
+                  <div class="mb-3">
+                     <div class="card rounded-0">
+                        <div class="card-header" id="heading_10">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_10" aria-expanded="true" aria-controls="collapse_10"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_10" class="collapse" aria-labelledby="heading_10">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="7" readonly>
+
+                                 <a class="btn btn-primary" href="#" role="button">Link</a>
+                                 <button class="btn btn-primary" type="submit">Button</button>
+                                 <input class="btn btn-primary" type="button" value="Input">
+                                 <input class="btn btn-primary" type="submit" value="Submit">
+                                 <input class="btn btn-primary" type="reset" value="Reset">
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="bd-example-row">
+                  <div class="bd-example">
+                     <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                     <button type="button" class="btn btn-secondary btn-lg mr-3">Large button</button>
+                     <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                     <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+                     <button type="button" class="btn btn-primary btn-lg btn-block mt-3">Block level button</button>
+                     <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+                  </div>
+                  <div class="mb-3">
+                     <div class="card rounded-0">
+                        <div class="card-header" id="heading_12">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_12" aria-expanded="true" aria-controls="collapse_12"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_12" class="collapse" aria-labelledby="heading_12">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="10" readonly>
+
+                                 <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                                 <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+
+                                 <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                                 <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+
+                                 <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                                 <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="bd-example-row">
+                  <div class="bd-example">
+                     <div class="btn-group mr-3" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary">Left</button>
+                        <button type="button" class="btn btn-secondary">Middle</button>
+                        <button type="button" class="btn btn-secondary">Right</button>
+                     </div>
+                     <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary">Button</button>
+                        <button type="button" class="btn btn-secondary">Button</button>
+                        <button type="button" class="btn btn-secondary">Button</button>
+                     </div>
+                  </div>
+                  <div class="mb-3">
+                     <div class="card rounded-0">
+                        <div class="card-header" id="heading_13">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_13" aria-expanded="true" aria-controls="collapse_13"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_13" class="collapse" aria-labelledby="heading_13">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="11" readonly>
+
+                                 <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-secondary">Left</button>
+                                    <button type="button" class="btn btn-secondary">Middle</button>
+                                    <button type="button" class="btn btn-secondary">Right</button>
+                                 </div>
+
+                                 <div class="btn-group-vertical">
+                                    ...
+                                 </div>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="bd-example-row">
+                  <div class="bd-example">
+                     <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                        <button type="button" class="btn btn-secondary">Left</button>
+                        <button type="button" class="btn btn-secondary">Middle</button>
+                        <button type="button" class="btn btn-secondary">Right</button>
+                     </div>
+                     <div class="mb-3"></div>
+                     <div class="btn-group" role="group" aria-label="Default button group">
+                        <button type="button" class="btn btn-secondary">Left</button>
+                        <button type="button" class="btn btn-secondary">Middle</button>
+                        <button type="button" class="btn btn-secondary">Right</button>
+                     </div>
+                     <div class="mb-3"></div>
+                     <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                        <button type="button" class="btn btn-secondary">Left</button>
+                        <button type="button" class="btn btn-secondary">Middle</button>
+                        <button type="button" class="btn btn-secondary">Right</button>
+                     </div>
+                  </div>
+                  <div class="mb-3">
+                     <div class="card rounded-0">
+                        <div class="card-header" id="heading_14">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_14" aria-expanded="true" aria-controls="collapse_14"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_14" class="collapse" aria-labelledby="heading_14">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="7" readonly>
+
+                                 <div class="btn-group" role="group" aria-label="Basic example">
+                                    <div class="btn-group btn-group-lg" role="group" aria-label="...">...</div>
+                                    <div class="btn-group" role="group" aria-label="...">...</div>
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="...">...</div>
+                                 </div>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <p class="mb-0">
+                  <span>Bootstrap:</span>&nbsp;
+                  <a href="http://getbootstrap.com/docs/4.1/components/buttons/" class="mr-2" target="_blank">Buttons&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                  <a href="http://getbootstrap.com/docs/4.1/components/button-group/" target="_blank">Button-group&nbsp;<i class="fas fa-external-link-alt"></i></a>
+               </p>
+            </div> <!-- End Buttons, button group -->
          </main>
       </div>
    </div>
