@@ -182,9 +182,9 @@ h1, h2, h3, h4, h5, h6 {
   .bd-example-row textarea[readonly] {
     background-color: #f8f9fa; }
 
-.bd-example-row .card {
+.bd-example-row .card-panel {
   border: 0.2rem solid #f8f9fa;
   border-top: 0;
   border-bottom: 0; }
-  .bd-example-row .card .card-body {
+  .bd-example-row .card-panel .card-body {
     padding: 0; }
