@@ -682,12 +682,12 @@
             <!-- Card -->
             <div class="mb-5">
                <h3 id="item-3-5">Card (Карточкa)</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptate incidunt officia mollitia animi quas delectus, ex cumque numquam explicabo sunt cupiditate modi eius, rem. Praesentium deserunt, quia voluptate nobis.</p>
-               <div class="bd-example-row">
+               <h4 class="text-secondary">Варианты карточек c разным контентом</h4>
+               <div class="bd-example-row mb-4">
                   <div class="bd-example">
                      <div class="row">
-                        <div class="col-sm-3">
-                           <div class="card">
+                        <div class="col-sm-6 col-xl-3">
+                           <div class="card mb-3 mb-xl-0">
                               <img class="card-img-top bg-light" src="images/welding-vector.jpg" alt="Card image cap">
                               <div class="card-body">
                                  <h5 class="card-title">Card title</h5>
@@ -696,8 +696,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-sm-3">
-                           <div class="card">
+                        <div class="col-sm-6 col-xl-3">
+                           <div class="card mb-3 mb-xl-0">
                               <div class="card-body">
                                  <h5 class="card-title">Card title</h5>
                                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -707,16 +707,16 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-sm-3">
-                           <div class="card">
+                        <div class="col-sm-6 col-xl-3">
+                           <div class="card mb-3 mb-xl-0">
                               <img class="card-img-top bg-light" src="images/welding-vector.jpg" alt="Card image cap">
                               <div class="card-body">
                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               </div>
                            </div>
                         </div>
-                        <div class="col-sm-3">
-                           <div class="card">
+                        <div class="col-sm-6 col-xl-3">
+                           <div class="card mb-3 mb-xl-0">
                               <img class="card-img-top bg-light" src="images/welding-vector.jpg" alt="Card image cap">
                               <div class="card-body">
                                  <h5 class="card-title">Card title</h5>
@@ -796,8 +796,9 @@
 
                   </div>
                </div>
-
-               <div class="bd-example-row">
+               
+               <h4 class="text-secondary">Header и footer</h4>
+               <div class="bd-example-row mb-4">
                   <div class="bd-example">
                      <div class="card text-center">
                         <div class="card-header">Featured</div>
@@ -837,12 +838,13 @@
 
                   </div>
                </div>
-
-               <div class="bd-example-row">
+               
+               <h4 class="text-secondary">Навигация внутри карточек</h4>
+               <div class="bd-example-row mb-4">
                   <div class="bd-example">
                      <div class="row">
-                        <div class="col-sm-6">
-                           <div class="card text-center">
+                        <div class="col-lg-6">
+                           <div class="card text-center mb-3">
                               <div class="card-header">
                                  <ul class="nav nav-tabs card-header-tabs">
                                     <li class="nav-item">
@@ -863,7 +865,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-lg-6">
                            <div class="card text-center">
                               <div class="card-header">
                                  <ul class="nav nav-pills card-header-pills">
@@ -899,23 +901,20 @@
                            <div class="card-body">
                               <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
 
-                                 <div class="card">
-                                    <div class="card-body">
-                                       <h5 class="card-title">Special title treatment</h5>
-                                       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                       <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                 </div>
-
                                  <div class="card text-center">
-                                    <div class="card-body">
-                                       <h5 class="card-title">Special title treatment</h5>
-                                       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                       <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <div class="card-header">
+                                       <ul class="nav nav-tabs card-header-tabs">
+                                          <li class="nav-item">
+                                             <a class="nav-link active" href="#">Active</a>
+                                          </li>
+                                          <li class="nav-item">
+                                             <a class="nav-link" href="#">Link</a>
+                                          </li>
+                                          <li class="nav-item">
+                                             <a class="nav-link disabled" href="#">Disabled</a>
+                                          </li>
+                                       </ul>
                                     </div>
-                                 </div>
-
-                                 <div class="card text-right">
                                     <div class="card-body">
                                        <h5 class="card-title">Special title treatment</h5>
                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -929,7 +928,461 @@
 
                   </div>
                </div>
+               
+               <h4 class="text-secondary">Карточка с текстом поверх картинки</h4>
+               <div class="bd-example-row mb-4">
+                  <div class="bd-example">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <div class="card bg-dark text-white">
+                              <img class="card-img" src="images/svarschikov-naks-1.jpg" alt="Card image">
+                              <div class="card-img-overlay">
+                                 <h5 class="card-title">Card title</h5>
+                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                 <p class="card-text">Last updated 3 mins ago</p>
+                              </div>
+                           </div>   
+                        </div>
+                     </div>
+                     
+                  </div>
+                  <div class="mb-3">
+                     <div class="card card-panel rounded-0">
+                        <div class="card-header" id="heading_18">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_18" aria-expanded="true" aria-controls="collapse_18"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
 
+                        <div id="collapse_18" class="collapse" aria-labelledby="heading_18">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="10" readonly>
+
+                                 <div class="card bg-dark text-white">
+                                    <img class="card-img" src="..." alt="Card image">
+                                    <div class="card-img-overlay">
+                                       <h5 class="card-title">Card title</h5>
+                                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                       <p class="card-text">Last updated 3 mins ago</p>
+                                    </div>
+                                 </div>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <h4 class="text-secondary">Использование классов-модификаторов</h4>
+               <div class="bd-example-row mb-4">
+                  <div class="bd-example">
+                     <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                           <div class="card text-white bg-primary mb-3">
+                              <div class="card-header">Header</div>
+                              <div class="card-body">
+                                 <h5 class="card-title">Primary card title</h5>
+                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                           <div class="card text-white bg-secondary mb-3">
+                              <div class="card-header">Header</div>
+                              <div class="card-body">
+                                 <h5 class="card-title">Secondary card title</h5>
+                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              </div>
+                           </div> 
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                           <div class="card border-success mb-3">
+                              <div class="card-header">Header</div>
+                              <div class="card-body text-success">
+                                 <h5 class="card-title">Success card title</h5>
+                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                           <div class="card border-danger mb-3">
+                              <div class="card-header">Header</div>
+                              <div class="card-body text-danger">
+                                 <h5 class="card-title">Danger card title</h5>
+                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              </div>
+                           </div> 
+                        </div>
+                     </div>
+                  </div>
+                  <div class="mb-3">
+                     <div class="card card-panel rounded-0">
+                        <div class="card-header" id="heading_19">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_19" aria-expanded="true" aria-controls="collapse_19"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_19" class="collapse" aria-labelledby="heading_19">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
+
+                                 <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                       <h5 class="card-title">Primary card title</h5>
+                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                 </div>
+                                 <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                       <h5 class="card-title">Secondary card title</h5>
+                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                 </div>
+
+                                 <div class="card border-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body text-success">
+                                       <h5 class="card-title">Success card title</h5>
+                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                 </div>
+                                 <div class="card border-danger mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body text-danger">
+                                       <h5 class="card-title">Danger card title</h5>
+                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                 </div>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <h4 class="text-secondary">Группа карточек с равной высотой <span class="text-danger text-monospace">.card-group</span></h4>
+               <div class="bd-example-row mb-4">
+                  <div class="bd-example">
+                     <div class="card-group">
+                        <div class="card">
+                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="mb-3">
+                     <div class="card card-panel rounded-0">
+                        <div class="card-header" id="heading_20">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_20" aria-expanded="true" aria-controls="collapse_20"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_20" class="collapse" aria-labelledby="heading_20">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
+
+                                 <div class="card-group">
+                                    <div class="card">
+                                       <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                       </div>
+                                    </div>
+                                    <div class="card">
+                                       <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                       </div>
+                                    </div>
+                                    <div class="card">
+                                       <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <h4 class="text-secondary">Карточки с равной высотой <span class="text-danger text-monospace">.card-deck</span></h4>
+               <div class="bd-example-row mb-4">
+                  <div class="bd-example">
+                     <div class="card-deck">
+                        <div class="card">
+                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="mb-3">
+                     <div class="card card-panel rounded-0">
+                        <div class="card-header" id="heading_21">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_21" aria-expanded="true" aria-controls="collapse_21"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_21" class="collapse" aria-labelledby="heading_21">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
+
+                                 <div class="card-deck">
+                                    <div class="card">
+                                       <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                       </div>
+                                    </div>
+                                    <div class="card">
+                                       <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                       </div>
+                                    </div>
+                                    <div class="card">
+                                       <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <h4 class="text-secondary">Колонки карточек <span class="text-danger text-monospace">.card-columns</span></h4>
+               <p>Данный компонент использует каскадную сетку <a href="https://masonry.desandro.com/" target="_blank">Masonry</a>, при этом карточки располагаются сверху вниз и слева направо.</p>
+               <div class="bd-example-row mb-4">
+                  <div class="bd-example">
+                     <div class="card-columns">
+                        <div class="card">
+                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">Card title that wraps to a new line</h5>
+                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                           </div>
+                        </div>
+                        <div class="card p-3">
+                           <blockquote class="blockquote mb-0 card-body">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                              <footer class="blockquote-footer">
+                                 <small class="text-muted">Someone famous in <cite title="Source Title">Source Title</cite></small>
+                              </footer>
+                           </blockquote>
+                        </div>
+                        <div class="card">
+                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                           </div>
+                        </div>
+                        <div class="card bg-primary text-white text-center p-3">
+                           <blockquote class="blockquote mb-0">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                              <footer class="blockquote-footer">
+                                 <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                              </footer>
+                           </blockquote>
+                        </div>
+                        <div class="card text-center">
+                           <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <img class="card-img" src="images/welding-vector.jpg" alt="Card image">
+                        </div>
+                        <div class="card p-3 text-right">
+                           <blockquote class="blockquote mb-0">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                              <footer class="blockquote-footer">
+                                 <small class="text-muted">Someone famous in <cite title="Source Title">Source Title</cite></small>
+                              </footer>
+                           </blockquote>
+                        </div>
+                        <div class="card">
+                           <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="mb-3">
+                     <div class="card card-panel rounded-0">
+                        <div class="card-header" id="heading_22">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_22" aria-expanded="true" aria-controls="collapse_22"><i class="fas fa-code"></i> HTML</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_22" class="collapse" aria-labelledby="heading_22">
+                           <div class="card-body">
+                              <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
+
+                                 <div class="card-columns">
+                                    <div class="card">
+                                       <img class="card-img-top" src="..." alt="Card image cap">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Card title that wraps to a new line</h5>
+                                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                       </div>
+                                    </div>
+                                    <div class="card p-3">
+                                       <blockquote class="blockquote mb-0 card-body">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                          <footer class="blockquote-footer">
+                                             <small class="text-muted">Someone famous in <cite title="Source Title">Source Title</cite></small>
+                                          </footer>
+                                       </blockquote>
+                                    </div>
+                                    <div class="card">
+                                       <img class="card-img-top" src="images..." alt="Card image cap">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                       </div>
+                                    </div>
+                                    <div class="card bg-primary text-white text-center p-3">
+                                       <blockquote class="blockquote mb-0">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                                          <footer class="blockquote-footer">
+                                             <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                                          </footer>
+                                       </blockquote>
+                                    </div>
+                                    <div class="card text-center">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                       </div>
+                                    </div>
+                                    <div class="card">
+                                       <img class="card-img" src="..." alt="Card image">
+                                    </div>
+                                    <div class="card p-3 text-right">
+                                       <blockquote class="blockquote mb-0">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                          <footer class="blockquote-footer">
+                                             <small class="text-muted">Someone famous in <cite title="Source Title">Source Title</cite></small>
+                                          </footer>
+                                       </blockquote>
+                                    </div>
+                                    <div class="card">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="bd-example-row mb-4">
+                  <div class="bd-example">
+                     <p class="text-secondary mb-0">Колонки карточек также можно расширить и настроить с помощью дополнительного кода. Ниже показано расширение класса <span class="text-danger text-monospace">.card-columns</span> с использованием CSS, где настраивается колличество столбцов на разных экранах.</p>
+                  </div>
+                  <div class="mb-3">
+                     <div class="card card-panel rounded-0">
+                        <div class="card-header" id="heading_23">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_23" aria-expanded="true" aria-controls="collapse_23"><i class="fab fa-css3"></i> CSS</button>
+                           </h5>
+                        </div>
+
+                        <div id="collapse_23" class="collapse" aria-labelledby="heading_23">
+                           <div class="card-body">
+                              <textarea class="form-control text-info rounded-0" wrap="off" rows="10" readonly>
+
+                                 .card-columns {
+                                    @include media-breakpoint-only(lg) {
+                                       column-count: 4;
+                                    }
+                                    @include media-breakpoint-only(xl) {
+                                       column-count: 5;
+                                    }
+                                 }
+                              </textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
 
                <p class="mb-0">Bootstrap: <a href="http://getbootstrap.com/docs/4.1/components/card/" target="_blank">Card&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
             </div> <!-- End Card -->
