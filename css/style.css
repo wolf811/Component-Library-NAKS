@@ -188,3 +188,34 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 0; }
   .bd-example-row .card-panel .card-body {
     padding: 0; }
+
+.carousel-item {
+  height: 350px;
+  background-color: #777; }
+  .carousel-item img {
+    object-fit: cover;
+    /* Do not scale the image */
+    object-position: center;
+    /* Center the image within the element */
+    height: 100%; }
+
+/* external css: flickity.css */
+.carousel {
+  background: #EEE; }
+  .carousel .carousel-cell {
+    width: 28%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    /* cell number */ }
+    .carousel .carousel-cell:before {
+      display: block;
+      text-align: center;
+      content: counter(carousel-cell);
+      line-height: 200px;
+      font-size: 80px;
+      color: white; }
+  .carousel .carousel-cell.is-selected {
+    background: #ED2; }
