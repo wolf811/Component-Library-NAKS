@@ -219,3 +219,12 @@ h1, h2, h3, h4, h5, h6 {
       color: white; }
   .carousel .carousel-cell.is-selected {
     background: #ED2; }
+
+/* css: Owl Carousel 2 */
+.owl-carousel .owl-content {
+  position: relative; }
+  .owl-carousel .owl-content h2 {
+    position: absolute;
+    color: #fff;
+    margin-top: 1rem;
+    margin-left: 1rem; }

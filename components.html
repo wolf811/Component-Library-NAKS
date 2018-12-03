@@ -20,6 +20,9 @@
    <link rel="stylesheet" href="fonts/AvenirNextCyr/font.css">
    <link rel="stylesheet" href="css/style.css">
 
+   <!-- W3 -->
+   <script src="js/w3.js"></script>
+
    <title>Library NAKS</title>
 </head>
 <body>
@@ -123,1357 +126,118 @@
             <div class="mb-5">
                <h1 class="bd-title" id="item-3">Компоненты</h1>
             </div>
+
+            <!-- Include ALERTS -->
+            <div w3-include-html="includes/comp-alerts.html"></div>
+            <!-- End Include ALERTS -->
+
+            <!-- Include BADGES -->
+            <div w3-include-html="includes/comp-badges.html"></div>
+            <!-- End Include BADGES -->
+
+            <!-- Include BREADCRUMB -->
+            <div w3-include-html="includes/comp-breadcrumb.html"></div>
+            <!-- End Include BREADCRUMB -->
             
-            <!-- Alerts -->
-            <div class="mb-5">
-               <h3 id="item-3-1">Alerts (Оповещения)</h3>
-               <h4 class="text-secondary">Простое оповещение</h4>
-               <div class="bd-example-row mb-4">
-                  <div class="bd-example">
-                     <div class="alert alert-secondary mb-0" role="alert">
-                        Простое оповещение
-                     </div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_01">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_01" aria-expanded="true" aria-controls="collapse_01"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
+            <!-- Include BUTTONS -->
+            <div w3-include-html="includes/comp-buttons.html"></div>
+            <!-- End Include BUTTONS -->
 
-                        <div id="collapse_01" class="collapse" aria-labelledby="heading_01">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="3" readonly>
-
-                                 <div class="alert alert-secondary" role="alert">Простое оповещение</div>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="bd-example-row mb-4">
-                  <div class="bd-example">
-                     <div class="alert alert-secondary mb-0" role="alert">
-                        Простое оповещение <a href="#" class="alert-link">со ссылкой</a>
-                     </div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_02">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_02" aria-expanded="true" aria-controls="collapse_02"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_02" class="collapse" aria-labelledby="heading_02">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="3" readonly>
-
-                                 <div class="alert alert-secondary" role="alert">Простое оповещение со ссылкой</div>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <h4 class="text-secondary">Оповещения с HTML</h4>
-               <p>Оповещения могут также содержать дополнительные элементы HTML, такие как заголовки, абзацы и разделители.</p>
-               <div class="bd-example-row mb-4">
-                  <div class="bd-example">
-                     <div class="alert alert-secondary mb-0" role="alert">
-                        <h4 class="alert-heading">Well done!</h4>
-                        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                        <hr>
-                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-                     </div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_03">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_03" aria-expanded="true" aria-controls="collapse_03"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_03" class="collapse" aria-labelledby="heading_03">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="8" readonly>
-
-                                 <div class="alert alert-secondary" role="alert">
-                                    <h4 class="alert-heading">Well done!</h4>
-                                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                                    <hr>
-                                    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-                                 </div>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <h4 class="text-secondary">Оповещения с функцией "закрытия"</h4>
-               <p>Используя JavaScript, можно закрыть оповещение. Для этого необходимо:</p>
-               <ul>
-                  <li>Убедится, что вы загрузили необходимый Bootstrap плагин (alert plugin).</li>
-                  <li>Добавить кнопку закрытия с классами <span class="text-danger text-monospace">.alert-disissible</span> и <span class="text-danger text-monospace">.close</span>, которые размещают кнопку справа от текста оповещения.</li>
-                  <li>На кнопке «Закрыть» добавить атрибут <span class="text-danger text-monospace">data-reject = «alert»</span>, который запускает функции JavaScript. С атрибутом обязательно используйте элемент <code class="text-danger text-monospace">&lt;button&gt;</code> для правильного поведения на всех устройствах.</li>
-                  <li>Для анимации оповещения при закрытии обязательно используйте классы <span class="text-danger text-monospace">.fade</span> и <span class="text-danger text-monospace">.show</span>.</li>
-               </ul>
-               <p>Пример с анимацией:</p>
-               <div class="bd-example-row mb-4">
-                  <div class="bd-example">
-                     <div class="alert alert-secondary alert-dismissible fade show mb-0" role="alert"> 
-                        <p>Оповещение с функцией "закрытия"</p> 
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-                        <div class="checkbox text-muted check-notShow">
-                           <label><input type="checkbox"> Больше не показывать</label>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_04">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_04" aria-expanded="true" aria-controls="collapse_04"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_04" class="collapse" aria-labelledby="heading_04">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="11" readonly>
-
-                                 <div class="alert alert-secondary alert-dismissible fade show" role="alert">
-                                    <p><strong>Holy guacamole!</strong> You should check in on some of those fields below.</p>
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                       <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <div class="checkbox text-muted check-notShow">
-                                       <label><input type="checkbox"> Больше не показывать</label>
-                                    </div>
-                                 </div>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <p class="mb-0">Bootstrap: <a href="http://getbootstrap.com/docs/4.1/components/alerts/" target="_blank">Alerts&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
-            </div> <!-- End Alerts -->
+            <!-- Include CARD -->
+            <div w3-include-html="includes/comp-card.html"></div>
+            <!-- End Include CARD -->
             
-            <!-- Badges -->
-            <div class="mb-5">
-               <h3 id="item-3-2">Badge (Значки)</h3>
-               <h4 class="text-secondary">Примеры использования</h4>
-               <p>Значки могут располагаться вместе с любым элементом, например с заголовком.</p>
-               <div class="bd-example-row">
-                  <div class="bd-example">
-                     <h4>Example heading <span class="badge badge-secondary">New</span></h4>
-                     <h5>Example heading <span class="badge badge-secondary">New</span></h5>
-                     <h6>Example heading <span class="badge badge-secondary">New</span></h6>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_05">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_05" aria-expanded="true" aria-controls="collapse_05"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_05" class="collapse" aria-labelledby="heading_05">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="5" readonly>
-
-                                 <h4>Example heading <span class="badge badge-secondary">New</span></h4>
-                                 <h5>Example heading <span class="badge badge-secondary">New</span></h5>
-                                 <h6>Example heading <span class="badge badge-secondary">New</span></h6>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <p>Значки могут использоваться как часть ссылок или кнопок для создания счетчика.</p>
-               <div class="bd-example-row">
-                  <div class="bd-example">
-                     <button type="button" class="btn btn-secondary">
-                        Notifications <span class="badge badge-light">4</span>
-                     </button>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_06">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_06" aria-expanded="true" aria-controls="collapse_06"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_06" class="collapse" aria-labelledby="heading_06">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="5" readonly>
-
-                                 <button type="button" class="btn btn-secondary">
-                                    Notifications <span class="badge badge-light">4</span>
-                                 </button>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <p>Указав любой из указанных ниже классов-модификаторов можно менять внешний вид значка. Обернув значок тегом <code class="text-danger text-monospace">&lt;a&gt;</code> можно использовать его в качестве ссылки.</p>
-               <div class="bd-example-row">
-                  <div class="bd-example">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-sm-6 mb-3 mb-sm-0">
-                              <p class="text-secondary mb-2">Использование классов-модификаторов</p>
-                              <div class="row">
-                                 <div class="col-sm-5">
-                                    <span class="badge badge-primary">Primary</span>
-                                    <span class="badge badge-secondary">Secondary</span>
-                                    <span class="badge badge-success">Success</span>
-                                 </div>
-                                 <div class="col-sm-7">
-                                    <span class="badge badge-pill badge-danger">Danger</span>
-                                    <span class="badge badge-pill badge-warning">Warning</span>
-                                    <span class="badge badge-pill badge-info">Info</span>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-sm-6">
-                              <p class="text-secondary mb-2">Ссылки</p>
-                              <a href="#" class="badge badge-primary">Primary</a>
-                              <a href="#" class="badge badge-pill badge-secondary">Secondary</a>
-                              <a href="#" class="badge badge-success">Success</a>
-                              <a href="#" class="badge badge-pill badge-danger">Danger</a>
-                              <a href="#" class="badge badge-warning">Warning</a>
-                              <a href="#" class="badge badge-pill badge-info">Info</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_07">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_07" aria-expanded="true" aria-controls="collapse_07"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_07" class="collapse" aria-labelledby="heading_07">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="16" readonly>
-
-                                 <span class="badge badge-primary">Primary</span>
-                                 <span class="badge badge-secondary">Secondary</span>
-                                 <span class="badge badge-success">Success</span>
-
-                                 <span class="badge badge-pill badge-danger">Danger</span>
-                                 <span class="badge badge-pill badge-warning">Warning</span>
-                                 <span class="badge badge-pill badge-info">Info</span>
-
-                                 <a href="#" class="badge badge-primary">Primary</a>
-                                 <a href="#" class="badge badge-pill badge-secondary">Secondary</a>
-                                 <a href="#" class="badge badge-success">Success</a>
-                                 <a href="#" class="badge badge-pill badge-danger">Danger</a>
-                                 <a href="#" class="badge badge-warning">Warning</a>
-                                 <a href="#" class="badge badge-pill badge-info">Info</a>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <p class="mb-0">Bootstrap: <a href="http://getbootstrap.com/docs/4.1/components/badge/" target="_blank">Badges&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
-            </div> <!-- End Badges -->
-            
-            <!-- Breadcrumb -->
-            <div class="mb-5">
-               <h3 id="item-3-3">Breadcrumb (Хлебные крошки)</h3>
-               <div class="bd-example-row">
-                  <div class="bd-example">
-                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                           <li class="breadcrumb-item active" aria-current="page">Home</li>
-                        </ol>
-                     </nav>
-
-                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                           <li class="breadcrumb-item"><a href="#">Home</a></li>
-                           <li class="breadcrumb-item active" aria-current="page">Library</li>
-                        </ol>
-                     </nav>
-
-                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb mb-0">
-                           <li class="breadcrumb-item"><a href="#">Home</a></li>
-                           <li class="breadcrumb-item"><a href="#">Library</a></li>
-                           <li class="breadcrumb-item active" aria-current="page">Data</li>
-                        </ol>
-                     </nav>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_08">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_08" aria-expanded="true" aria-controls="collapse_08"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_08" class="collapse" aria-labelledby="heading_08">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
-
-                                 <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                       <li class="breadcrumb-item active" aria-current="page">Home</li>
-                                    </ol>
-                                 </nav>
-
-                                 <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                       <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                       <li class="breadcrumb-item active" aria-current="page">Library</li>
-                                    </ol>
-                                 </nav>
-
-                                 <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                       <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                       <li class="breadcrumb-item"><a href="#">Library</a></li>
-                                       <li class="breadcrumb-item active" aria-current="page">Data</li>
-                                    </ol>
-                                 </nav>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-
-                  </div>
-               </div>
-               <p class="mb-0">Bootstrap: <a href="http://getbootstrap.com/docs/4.1/components/breadcrumb/" target="_blank">Breadcrumb&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
-            </div> <!-- End Breadcrumb -->
-            
-            <!-- Buttons, button group -->
-            <div class="mb-5">
-               <h3 id="item-3-4">Buttons (Кнопки)</h3>
-               <p>Использование классов-модификаторов</p>
-               <div class="bd-example-row">
-                  <div class="bd-example">
-                     <button type="button" class="btn btn-primary">Primary</button>
-                     <button type="button" class="btn btn-secondary">Secondary</button>
-                     <button type="button" class="btn btn-success">Success</button>
-                     <button type="button" class="btn btn-danger">Danger</button>
-                     <button type="button" class="btn btn-warning">Warning</button>
-                     <button type="button" class="btn btn-info">Info</button>
-                     <button type="button" class="btn btn-light">Light</button>
-                     <button type="button" class="btn btn-dark">Dark</button>
-
-                     <button type="button" class="btn btn-link">Link</button>
-                     <div class="w-100 mb-3"></div>
-                     <button type="button" class="btn btn-outline-primary">Primary</button>
-                     <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                     <button type="button" class="btn btn-outline-success">Success</button>
-                     <button type="button" class="btn btn-outline-danger">Danger</button>
-                     <button type="button" class="btn btn-outline-warning">Warning</button>
-                     <button type="button" class="btn btn-outline-info">Info</button>
-                     <button type="button" class="btn btn-outline-light">Light</button>
-                     <button type="button" class="btn btn-outline-dark">Dark</button>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_09">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_09" aria-expanded="true" aria-controls="collapse_09"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_09" class="collapse" aria-labelledby="heading_09">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
-
-                                 <button type="button" class="btn btn-primary">Primary</button>
-                                 <button type="button" class="btn btn-secondary">Secondary</button>
-                                 <button type="button" class="btn btn-success">Success</button>
-                                 <button type="button" class="btn btn-danger">Danger</button>
-                                 <button type="button" class="btn btn-warning">Warning</button>
-                                 <button type="button" class="btn btn-info">Info</button>
-                                 <button type="button" class="btn btn-light">Light</button>
-                                 <button type="button" class="btn btn-dark">Dark</button>
-                                 <button type="button" class="btn btn-link">Link</button>
-
-                                 <button type="button" class="btn btn-outline-primary">Primary</button>
-                                 <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                                 <button type="button" class="btn btn-outline-success">Success</button>
-                                 <button type="button" class="btn btn-outline-danger">Danger</button>
-                                 <button type="button" class="btn btn-outline-warning">Warning</button>
-                                 <button type="button" class="btn btn-outline-info">Info</button>
-                                 <button type="button" class="btn btn-outline-light">Light</button>
-                                 <button type="button" class="btn btn-outline-dark">Dark</button>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               
-               <p>Классы <span class="text-danger text-monospace">.btn</span> могут быть использованы не только с элементом <code class="text-danger text-monospace">&lt;button&gt;</code>, но и с элементами <code class="text-danger text-monospace">&lt;a&gt;</code> и <code class="text-danger text-monospace">&lt;input&gt;</code>.</p>
-               <div class="bd-example-row">
-                  <div class="bd-example">
-                     <a class="btn btn-primary" href="#" role="button">Link</a>
-                     <button class="btn btn-primary" type="submit">Button</button>
-                     <input class="btn btn-primary" type="button" value="Input">
-                     <input class="btn btn-primary" type="submit" value="Submit">
-                     <input class="btn btn-primary" type="reset" value="Reset">
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_10">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_10" aria-expanded="true" aria-controls="collapse_10"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_10" class="collapse" aria-labelledby="heading_10">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="7" readonly>
-
-                                 <a class="btn btn-primary" href="#" role="button">Link</a>
-                                 <button class="btn btn-primary" type="submit">Button</button>
-                                 <input class="btn btn-primary" type="button" value="Input">
-                                 <input class="btn btn-primary" type="submit" value="Submit">
-                                 <input class="btn btn-primary" type="reset" value="Reset">
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               
-               <p>Добавив классы <span class="text-danger text-monospace">.btn-lg</span> или <span class="text-danger text-monospace">.btn-sm</span> можно изменить размер. Добавив <span class="text-danger text-monospace">.btn-block</span> кнопка займет всю ширину родительского блока.</p>
-               <div class="bd-example-row">
-                  <div class="bd-example">
-                     <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                     <button type="button" class="btn btn-secondary btn-lg mr-3">Large button</button>
-                     <button type="button" class="btn btn-primary btn-sm">Small button</button>
-                     <button type="button" class="btn btn-secondary btn-sm">Small button</button>
-                     <button type="button" class="btn btn-primary btn-lg btn-block mt-3">Block level button</button>
-                     <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_12">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_12" aria-expanded="true" aria-controls="collapse_12"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_12" class="collapse" aria-labelledby="heading_12">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="10" readonly>
-
-                                 <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                                 <button type="button" class="btn btn-secondary btn-lg">Large button</button>
-
-                                 <button type="button" class="btn btn-primary btn-sm">Small button</button>
-                                 <button type="button" class="btn btn-secondary btn-sm">Small button</button>
-
-                                 <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                                 <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               
-               <p>Для объединения кнопок в группу необходимо обернуть несколько <span class="text-danger text-monospace">.btn</span> в <span class="text-danger text-monospace">.btn-group</span>, для вертикального расположения вместо <span class="text-danger text-monospace">.btn-group</span> используется <span class="text-danger text-monospace">.btn-group-vertical</span></p>
-               <div class="bd-example-row">
-                  <div class="bd-example">
-                     <div class="btn-group mr-3" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary">Left</button>
-                        <button type="button" class="btn btn-secondary">Middle</button>
-                        <button type="button" class="btn btn-secondary">Right</button>
-                     </div>
-                     <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary">Button</button>
-                        <button type="button" class="btn btn-secondary">Button</button>
-                        <button type="button" class="btn btn-secondary">Button</button>
-                     </div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_13">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_13" aria-expanded="true" aria-controls="collapse_13"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_13" class="collapse" aria-labelledby="heading_13">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="11" readonly>
-
-                                 <div class="btn-group" role="group" aria-label="Basic example">
-                                    <button type="button" class="btn btn-secondary">Left</button>
-                                    <button type="button" class="btn btn-secondary">Middle</button>
-                                    <button type="button" class="btn btn-secondary">Right</button>
-                                 </div>
-
-                                 <div class="btn-group-vertical">
-                                    ...
-                                 </div>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               
-               <p>Для изменения размера группы кнопок необходимо к <span class="text-danger text-monospace">.btn-group</span> добавить соответствующий класс <span class="text-danger text-monospace">.btn-group-lg</span> или <span class="text-danger text-monospace">.btn-group-sm</span>.</p>
-               <div class="bd-example-row">
-                  <div class="bd-example">
-                     <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-                        <button type="button" class="btn btn-secondary">Left</button>
-                        <button type="button" class="btn btn-secondary">Middle</button>
-                        <button type="button" class="btn btn-secondary">Right</button>
-                     </div>
-                     <div class="mb-3"></div>
-                     <div class="btn-group" role="group" aria-label="Default button group">
-                        <button type="button" class="btn btn-secondary">Left</button>
-                        <button type="button" class="btn btn-secondary">Middle</button>
-                        <button type="button" class="btn btn-secondary">Right</button>
-                     </div>
-                     <div class="mb-3"></div>
-                     <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-                        <button type="button" class="btn btn-secondary">Left</button>
-                        <button type="button" class="btn btn-secondary">Middle</button>
-                        <button type="button" class="btn btn-secondary">Right</button>
-                     </div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_14">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_14" aria-expanded="true" aria-controls="collapse_14"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_14" class="collapse" aria-labelledby="heading_14">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="7" readonly>
-
-                                 <div class="btn-group" role="group" aria-label="Basic example">
-                                    <div class="btn-group btn-group-lg" role="group" aria-label="...">...</div>
-                                    <div class="btn-group" role="group" aria-label="...">...</div>
-                                    <div class="btn-group btn-group-sm" role="group" aria-label="...">...</div>
-                                 </div>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <p class="mb-0">
-                  <span>Bootstrap:</span>&nbsp;
-                  <a href="http://getbootstrap.com/docs/4.1/components/buttons/" class="mr-2" target="_blank">Buttons&nbsp;<i class="fas fa-external-link-alt"></i></a>
-                  <a href="http://getbootstrap.com/docs/4.1/components/button-group/" target="_blank">Button-group&nbsp;<i class="fas fa-external-link-alt"></i></a>
-               </p>
-            </div> <!-- End Buttons, button group -->
-
-            <!-- Card -->
-            <div class="mb-5">
-               <h3 id="item-3-5">Card (Карточкa)</h3>
-               <h4 class="text-secondary">Варианты карточек c разным контентом</h4>
-               <div class="bd-example-row mb-4">
-                  <div class="bd-example">
-                     <div class="row">
-                        <div class="col-sm-6 col-xl-3">
-                           <div class="card mb-3 mb-xl-0">
-                              <img class="card-img-top bg-light" src="images/welding-vector.jpg" alt="Card image cap">
-                              <div class="card-body">
-                                 <h5 class="card-title">Card title</h5>
-                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                 <a href="#" class="btn btn-primary">Go somewhere</a>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-sm-6 col-xl-3">
-                           <div class="card mb-3 mb-xl-0">
-                              <div class="card-body">
-                                 <h5 class="card-title">Card title</h5>
-                                 <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                 <a href="#" class="card-link">Card link</a>
-                                 <a href="#" class="card-link">Another link</a>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-sm-6 col-xl-3">
-                           <div class="card mb-3 mb-xl-0">
-                              <img class="card-img-top bg-light" src="images/welding-vector.jpg" alt="Card image cap">
-                              <div class="card-body">
-                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-sm-6 col-xl-3">
-                           <div class="card mb-3 mb-xl-0">
-                              <img class="card-img-top bg-light" src="images/welding-vector.jpg" alt="Card image cap">
-                              <div class="card-body">
-                                 <h5 class="card-title">Card title</h5>
-                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              </div>
-                              <ul class="list-group list-group-flush">
-                                 <li class="list-group-item">Cras justo odio</li>
-                                 <li class="list-group-item">Dapibus ac facilisis in</li>
-                                 <li class="list-group-item">Vestibulum at eros</li>
-                              </ul>
-                              <div class="card-body">
-                                 <a href="#" class="card-link">Card link</a>
-                                 <a href="#" class="card-link">Another link</a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_15">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_15" aria-expanded="true" aria-controls="collapse_15"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_15" class="collapse" aria-labelledby="heading_15">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
-
-                                 <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src="..." alt="Card image cap">
-                                    <div class="card-body">
-                                       <h5 class="card-title">Card title</h5>
-                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                       <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                 </div>
-
-                                 <div class="card" style="width: 18rem;">
-                                    <div class="card-body">
-                                       <h5 class="card-title">Card title</h5>
-                                       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                       <a href="#" class="card-link">Card link</a>
-                                       <a href="#" class="card-link">Another link</a>
-                                    </div>
-                                 </div>
-
-                                 <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src="..." alt="Card image cap">
-                                    <div class="card-body">
-                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                 </div>
-
-                                 <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src="..." alt="Card image cap">
-                                    <div class="card-body">
-                                       <h5 class="card-title">Card title</h5>
-                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                       <li class="list-group-item">Cras justo odio</li>
-                                       <li class="list-group-item">Dapibus ac facilisis in</li>
-                                       <li class="list-group-item">Vestibulum at eros</li>
-                                    </ul>
-                                    <div class="card-body">
-                                       <a href="#" class="card-link">Card link</a>
-                                       <a href="#" class="card-link">Another link</a>
-                                    </div>
-                                 </div>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-
-                  </div>
-               </div>
-               
-               <h4 class="text-secondary">Header и footer</h4>
-               <div class="bd-example-row mb-4">
-                  <div class="bd-example">
-                     <div class="card text-center">
-                        <div class="card-header">Featured</div>
-                        <div class="card-body">
-                           <h5 class="card-title">Special title treatment</h5>
-                           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                           <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                        <div class="card-footer text-muted">2 days ago</div>
-                     </div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_16">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_16" aria-expanded="true" aria-controls="collapse_16"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_16" class="collapse" aria-labelledby="heading_16">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="11" readonly>
-
-                                 <div class="card text-center">
-                                    <div class="card-header">Featured</div>
-                                    <div class="card-body">
-                                       <h5 class="card-title">Special title treatment</h5>
-                                       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                       <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                    <div class="card-footer text-muted">2 days ago</div>
-                                 </div>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-
-                  </div>
-               </div>
-               
-               <h4 class="text-secondary">Навигация внутри карточек</h4>
-               <div class="bd-example-row mb-4">
-                  <div class="bd-example">
-                     <div class="row">
-                        <div class="col-lg-6">
-                           <div class="card text-center mb-3">
-                              <div class="card-header">
-                                 <ul class="nav nav-tabs card-header-tabs">
-                                    <li class="nav-item">
-                                       <a class="nav-link active" href="#">Active</a>
-                                    </li>
-                                    <li class="nav-item">
-                                       <a class="nav-link" href="#">Link</a>
-                                    </li>
-                                    <li class="nav-item">
-                                       <a class="nav-link disabled" href="#">Disabled</a>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="card-body">
-                                 <h5 class="card-title">Special title treatment</h5>
-                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                 <a href="#" class="btn btn-primary">Go somewhere</a>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-6">
-                           <div class="card text-center">
-                              <div class="card-header">
-                                 <ul class="nav nav-pills card-header-pills">
-                                    <li class="nav-item">
-                                       <a class="nav-link active" href="#">Active</a>
-                                    </li>
-                                    <li class="nav-item">
-                                       <a class="nav-link" href="#">Link</a>
-                                    </li>
-                                    <li class="nav-item">
-                                       <a class="nav-link disabled" href="#">Disabled</a>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <div class="card-body">
-                                 <h5 class="card-title">Special title treatment</h5>
-                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                 <a href="#" class="btn btn-primary">Go somewhere</a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_17">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_17" aria-expanded="true" aria-controls="collapse_17"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_17" class="collapse" aria-labelledby="heading_17">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
-
-                                 <div class="card text-center">
-                                    <div class="card-header">
-                                       <ul class="nav nav-tabs card-header-tabs">
-                                          <li class="nav-item">
-                                             <a class="nav-link active" href="#">Active</a>
-                                          </li>
-                                          <li class="nav-item">
-                                             <a class="nav-link" href="#">Link</a>
-                                          </li>
-                                          <li class="nav-item">
-                                             <a class="nav-link disabled" href="#">Disabled</a>
-                                          </li>
-                                       </ul>
-                                    </div>
-                                    <div class="card-body">
-                                       <h5 class="card-title">Special title treatment</h5>
-                                       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                       <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                 </div>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-
-                  </div>
-               </div>
-               
-               <h4 class="text-secondary">Карточка с текстом поверх картинки</h4>
-               <div class="bd-example-row mb-4">
-                  <div class="bd-example">
-                     <div class="row">
-                        <div class="col-lg-6">
-                           <div class="card bg-dark text-white">
-                              <img class="card-img" src="images/svarschikov-naks-1.jpg" alt="Card image">
-                              <div class="card-img-overlay">
-                                 <h5 class="card-title">Card title</h5>
-                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                 <p class="card-text">Last updated 3 mins ago</p>
-                              </div>
-                           </div>   
-                        </div>
-                     </div>
-                     
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_18">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_18" aria-expanded="true" aria-controls="collapse_18"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_18" class="collapse" aria-labelledby="heading_18">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="10" readonly>
-
-                                 <div class="card bg-dark text-white">
-                                    <img class="card-img" src="..." alt="Card image">
-                                    <div class="card-img-overlay">
-                                       <h5 class="card-title">Card title</h5>
-                                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                       <p class="card-text">Last updated 3 mins ago</p>
-                                    </div>
-                                 </div>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               
-               <h4 class="text-secondary">Использование классов-модификаторов</h4>
-               <div class="bd-example-row mb-4">
-                  <div class="bd-example">
-                     <div class="row">
-                        <div class="col-sm-6 col-lg-3">
-                           <div class="card text-white bg-primary mb-3">
-                              <div class="card-header">Header</div>
-                              <div class="card-body">
-                                 <h5 class="card-title">Primary card title</h5>
-                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                           <div class="card text-white bg-secondary mb-3">
-                              <div class="card-header">Header</div>
-                              <div class="card-body">
-                                 <h5 class="card-title">Secondary card title</h5>
-                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              </div>
-                           </div> 
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                           <div class="card border-success mb-3">
-                              <div class="card-header">Header</div>
-                              <div class="card-body text-success">
-                                 <h5 class="card-title">Success card title</h5>
-                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                           <div class="card border-danger mb-3">
-                              <div class="card-header">Header</div>
-                              <div class="card-body text-danger">
-                                 <h5 class="card-title">Danger card title</h5>
-                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              </div>
-                           </div> 
-                        </div>
-                     </div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_19">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_19" aria-expanded="true" aria-controls="collapse_19"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_19" class="collapse" aria-labelledby="heading_19">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
-
-                                 <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                                    <div class="card-header">Header</div>
-                                    <div class="card-body">
-                                       <h5 class="card-title">Primary card title</h5>
-                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                 </div>
-                                 <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                                    <div class="card-header">Header</div>
-                                    <div class="card-body">
-                                       <h5 class="card-title">Secondary card title</h5>
-                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                 </div>
-
-                                 <div class="card border-success mb-3" style="max-width: 18rem;">
-                                    <div class="card-header">Header</div>
-                                    <div class="card-body text-success">
-                                       <h5 class="card-title">Success card title</h5>
-                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                 </div>
-                                 <div class="card border-danger mb-3" style="max-width: 18rem;">
-                                    <div class="card-header">Header</div>
-                                    <div class="card-body text-danger">
-                                       <h5 class="card-title">Danger card title</h5>
-                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                 </div>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               
-               <h4 class="text-secondary">Группа карточек с равной высотой <span class="text-danger text-monospace">.card-group</span></h4>
-               <div class="bd-example-row mb-4">
-                  <div class="bd-example">
-                     <div class="card-group">
-                        <div class="card">
-                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                           </div>
-                        </div>
-                        <div class="card">
-                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                           </div>
-                        </div>
-                        <div class="card">
-                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_20">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_20" aria-expanded="true" aria-controls="collapse_20"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_20" class="collapse" aria-labelledby="heading_20">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
-
-                                 <div class="card-group">
-                                    <div class="card">
-                                       <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                                       <div class="card-body">
-                                          <h5 class="card-title">Card title</h5>
-                                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                       </div>
-                                    </div>
-                                    <div class="card">
-                                       <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                                       <div class="card-body">
-                                          <h5 class="card-title">Card title</h5>
-                                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                       </div>
-                                    </div>
-                                    <div class="card">
-                                       <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                                       <div class="card-body">
-                                          <h5 class="card-title">Card title</h5>
-                                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               
-               <h4 class="text-secondary">Карточки с равной высотой <span class="text-danger text-monospace">.card-deck</span></h4>
-               <div class="bd-example-row mb-4">
-                  <div class="bd-example">
-                     <div class="card-deck">
-                        <div class="card">
-                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                           </div>
-                        </div>
-                        <div class="card">
-                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                           </div>
-                        </div>
-                        <div class="card">
-                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_21">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_21" aria-expanded="true" aria-controls="collapse_21"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_21" class="collapse" aria-labelledby="heading_21">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
-
-                                 <div class="card-deck">
-                                    <div class="card">
-                                       <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                                       <div class="card-body">
-                                          <h5 class="card-title">Card title</h5>
-                                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                       </div>
-                                    </div>
-                                    <div class="card">
-                                       <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                                       <div class="card-body">
-                                          <h5 class="card-title">Card title</h5>
-                                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                       </div>
-                                    </div>
-                                    <div class="card">
-                                       <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                                       <div class="card-body">
-                                          <h5 class="card-title">Card title</h5>
-                                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               
-               <h4 class="text-secondary">Колонки карточек <span class="text-danger text-monospace">.card-columns</span></h4>
-               <p>Данный компонент использует каскадную сетку <a href="https://masonry.desandro.com/" target="_blank">Masonry</a>, при этом карточки располагаются сверху вниз и слева направо.</p>
-               <div class="bd-example-row mb-4">
-                  <div class="bd-example">
-                     <div class="card-columns">
-                        <div class="card">
-                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h5 class="card-title">Card title that wraps to a new line</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                           </div>
-                        </div>
-                        <div class="card p-3">
-                           <blockquote class="blockquote mb-0 card-body">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                              <footer class="blockquote-footer">
-                                 <small class="text-muted">Someone famous in <cite title="Source Title">Source Title</cite></small>
-                              </footer>
-                           </blockquote>
-                        </div>
-                        <div class="card">
-                           <img class="card-img-top" src="images/welding-vector.jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                           </div>
-                        </div>
-                        <div class="card bg-primary text-white text-center p-3">
-                           <blockquote class="blockquote mb-0">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                              <footer class="blockquote-footer">
-                                 <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
-                              </footer>
-                           </blockquote>
-                        </div>
-                        <div class="card text-center">
-                           <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                           </div>
-                        </div>
-                        <div class="card">
-                           <img class="card-img" src="images/welding-vector.jpg" alt="Card image">
-                        </div>
-                        <div class="card p-3 text-right">
-                           <blockquote class="blockquote mb-0">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                              <footer class="blockquote-footer">
-                                 <small class="text-muted">Someone famous in <cite title="Source Title">Source Title</cite></small>
-                              </footer>
-                           </blockquote>
-                        </div>
-                        <div class="card">
-                           <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_22">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_22" aria-expanded="true" aria-controls="collapse_22"><i class="fas fa-code"></i> HTML</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_22" class="collapse" aria-labelledby="heading_22">
-                           <div class="card-body">
-                              <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
-
-                                 <div class="card-columns">
-                                    <div class="card">
-                                       <img class="card-img-top" src="..." alt="Card image cap">
-                                       <div class="card-body">
-                                          <h5 class="card-title">Card title that wraps to a new line</h5>
-                                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                       </div>
-                                    </div>
-                                    <div class="card p-3">
-                                       <blockquote class="blockquote mb-0 card-body">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                          <footer class="blockquote-footer">
-                                             <small class="text-muted">Someone famous in <cite title="Source Title">Source Title</cite></small>
-                                          </footer>
-                                       </blockquote>
-                                    </div>
-                                    <div class="card">
-                                       <img class="card-img-top" src="images..." alt="Card image cap">
-                                       <div class="card-body">
-                                          <h5 class="card-title">Card title</h5>
-                                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                       </div>
-                                    </div>
-                                    <div class="card bg-primary text-white text-center p-3">
-                                       <blockquote class="blockquote mb-0">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                                          <footer class="blockquote-footer">
-                                             <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
-                                          </footer>
-                                       </blockquote>
-                                    </div>
-                                    <div class="card text-center">
-                                       <div class="card-body">
-                                          <h5 class="card-title">Card title</h5>
-                                          <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                       </div>
-                                    </div>
-                                    <div class="card">
-                                       <img class="card-img" src="..." alt="Card image">
-                                    </div>
-                                    <div class="card p-3 text-right">
-                                       <blockquote class="blockquote mb-0">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                          <footer class="blockquote-footer">
-                                             <small class="text-muted">Someone famous in <cite title="Source Title">Source Title</cite></small>
-                                          </footer>
-                                       </blockquote>
-                                    </div>
-                                    <div class="card">
-                                       <div class="card-body">
-                                          <h5 class="card-title">Card title</h5>
-                                          <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               
-               <div class="bd-example-row mb-4">
-                  <div class="bd-example">
-                     <p class="text-secondary mb-0">Колонки карточек также можно расширить и настроить с помощью дополнительного кода. Ниже показано расширение класса <span class="text-danger text-monospace">.card-columns</span> с использованием CSS, где настраивается колличество столбцов на разных экранах.</p>
-                  </div>
-                  <div class="mb-3">
-                     <div class="card card-panel rounded-0">
-                        <div class="card-header" id="heading_23">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_23" aria-expanded="true" aria-controls="collapse_23"><i class="fab fa-css3"></i> CSS</button>
-                           </h5>
-                        </div>
-
-                        <div id="collapse_23" class="collapse" aria-labelledby="heading_23">
-                           <div class="card-body">
-                              <textarea class="form-control text-info rounded-0" wrap="off" rows="10" readonly>
-
-                                 .card-columns {
-                                    @include media-breakpoint-only(lg) {
-                                       column-count: 4;
-                                    }
-                                    @include media-breakpoint-only(xl) {
-                                       column-count: 5;
-                                    }
-                                 }
-                              </textarea>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <p class="mb-0">Bootstrap: <a href="http://getbootstrap.com/docs/4.1/components/card/" target="_blank">Card&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
-            </div> <!-- End Card -->
+            <!-- Include CAROUSEL -->
+            <!-- <div w3-include-html="includes/comp-carousel.html"></div> -->
+            <!-- End Include CAROUSEL -->
 
             <!-- Carousel -->
             <div class="mb-5">
-               <h3 id="item-3-5">Carousel (Карусель, слайдеры)</h3>
+               <h3 id="item-3-6">Carousel (Карусель, слайдеры)</h3>
                <h4 class="text-secondary">Варианты карусели c различными эффектами смены слайдов</h4>
                <div class="bd-example-row mb-4">
                   <div class="bd-example">
-                     <div id="carouselExampleIndicators" class="carousel slide mb-3" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                           <div class="carousel-item active">
-                              <img class="d-block w-100" src="images/pattern-bg.jpg" alt="First slide">
-                              <div class="carousel-caption d-none d-md-block">
-                                 <h5>Первый слайд</h5>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, aperiam!</p>
+                     <div class="row">
+                        <div class="col-lg-6 mb-3 mb-lg-0">
+                           <div id="carouselExampleIndicators" class="carousel slide mb-3" data-ride="carousel">
+                              <ol class="carousel-indicators">
+                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                 <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/pattern-bg.jpg" alt="First slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                       <h5>Первый слайд</h5>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, aperiam!</p>
+                                    </div>
+                                 </div>
+                                 <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/pattern-og.png" alt="Second slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                       <h5>Второй слайд</h5>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                 </div>
+                                 <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/pattern-howto01.gif" alt="Third slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                       <h5>Третий слайд</h5>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At veniam incidunt hic, et eius molestiae.</p>
+                                    </div>
+                                 </div>
                               </div>
-                           </div>
-                           <div class="carousel-item">
-                              <img class="d-block w-100" src="images/pattern-og.png" alt="Second slide">
-                              <div class="carousel-caption d-none d-md-block">
-                                 <h5>Второй слайд</h5>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                              </div>
-                           </div>
-                           <div class="carousel-item">
-                              <img class="d-block w-100" src="images/pattern-howto01.gif" alt="Third slide">
-                              <div class="carousel-caption d-none d-md-block">
-                                 <h5>Третий слайд</h5>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At veniam incidunt hic, et eius molestiae.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                           <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                           <span class="sr-only">Next</span>
-                        </a>
-                     </div>
-
-                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                           <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
-                           <li data-target="#carouselExampleFade" data-slide-to="1"></li>
-                           <li data-target="#carouselExampleFade" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                           <div class="carousel-item active">
-                              <img class="d-block w-100" src="images/pattern-bg.jpg" alt="First slide">
-                              <div class="carousel-caption d-none d-md-block">
-                                 <h5>Первый слайд</h5>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, aperiam!</p>
-                              </div>
-                           </div>
-                           <div class="carousel-item">
-                              <img class="d-block w-100" src="images/pattern-og.png" alt="Second slide">
-                              <div class="carousel-caption d-none d-md-block">
-                                 <h5>Второй слайд</h5>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                              </div>
-                           </div>
-                           <div class="carousel-item">
-                              <img class="d-block w-100" src="images/pattern-howto01.gif" alt="Third slide">
-                              <div class="carousel-caption d-none d-md-block">
-                                 <h5>Третий слайд</h5>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At veniam incidunt hic, et eius molestiae.</p>
-                              </div>
+                              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                 <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                 <span class="sr-only">Next</span>
+                              </a>
                            </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                           <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                           <span class="sr-only">Next</span>
-                        </a>
+                        <div class="col-lg-6">
+                           <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                              <ol class="carousel-indicators">
+                                 <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
+                                 <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+                                 <li data-target="#carouselExampleFade" data-slide-to="2"></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                 <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/pattern-bg.jpg" alt="First slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                       <h5>Первый слайд</h5>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, aperiam!</p>
+                                    </div>
+                                 </div>
+                                 <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/pattern-og.png" alt="Second slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                       <h5>Второй слайд</h5>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                 </div>
+                                 <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/pattern-howto01.gif" alt="Third slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                       <h5>Третий слайд</h5>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At veniam incidunt hic, et eius molestiae.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                 <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                 <span class="sr-only">Next</span>
+                              </a>
+                           </div>
+                        </div>
                      </div>
                   </div>
                   <div class="mb-3">
@@ -1488,7 +252,48 @@
                            <div class="card-body">
                               <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
 
-                                 
+                                 <div id="carouselExampleIndicators" class="carousel slide mb-3" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                       <div class="carousel-item active">
+                                          <img class="d-block w-100" src="..." alt="First slide">
+                                          <div class="carousel-caption d-none d-md-block">
+                                             <h5>Первый слайд</h5>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, aperiam!</p>
+                                          </div>
+                                       </div>
+                                       <div class="carousel-item">
+                                          <img class="d-block w-100" src="..." alt="Second slide">
+                                          <div class="carousel-caption d-none d-md-block">
+                                             <h5>Второй слайд</h5>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                          </div>
+                                       </div>
+                                       <div class="carousel-item">
+                                          <img class="d-block w-100" src="..." alt="Third slide">
+                                          <div class="carousel-caption d-none d-md-block">
+                                             <h5>Третий слайд</h5>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At veniam incidunt hic, et eius molestiae.</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                       <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                       <span class="sr-only">Next</span>
+                                    </a>
+                                 </div>
+
+                                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                                    ...
+                                 </div>
                               </textarea>
                            </div>
                         </div>
@@ -1502,7 +307,6 @@
                <h4 class="text-secondary">Другие слайдеры</h4>
                <div class="bd-example-row mb-4">
                   <div class="bd-example">
-                     <!-- Flickity HTML init -->
                      <h5>Flickity v2.1</h5>
                      <div class="carousel mb-3" data-flickity='{ "groupCells": true }'>
                         <div class="carousel-cell"></div>
@@ -1518,91 +322,39 @@
                         <div class="carousel-cell"></div>
                      </div>
                   </div>
-                  <div class="mb-3"></div>
+                  <div class="mb-2"></div>
+                  <p class="mb-1">Flickity: <a href="https://flickity.metafizzy.co/" target="_blank">flickity.metafizzy.co&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
+                  <p>Demo: <a href="Edit this demo on CodePen" target="_blank">Edit this demo on CodePen&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                  </p>
                </div>
-               <!-- <p>Owl Carousel 2: <a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank">owl.carousel.js&nbsp;<i class="fas fa-external-link-alt"></i></a></p> -->
-               <p>Flickity: <a href="https://flickity.metafizzy.co/" target="_blank">flickity.metafizzy.co&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
-               <p>Demo: <a href="Edit this demo on CodePen" target="_blank">Edit this demo on CodePen&nbsp;<i class="fas fa-external-link-alt"></i></a>
-               </p>
+               
 
                <div class="bd-example-row mb-4">
                   <div class="bd-example">
-                     <!-- Flickity HTML init -->
-                     <h5>Flickity v2.1</h5>
-                     <!-- Set up your HTML -->
-                     <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                        <div class="owl-stage-outer">
-                           <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2376px;">
-                              <div class="owl-item active" style="width: 178px; margin-right: 20px;"><div class="item">
-                           <h4>1</h4>
-                        </div>
-                     </div>
-                     <div class="owl-item active" style="width: 178px; margin-right: 20px;">
-                        <div class="item">
-                           <h4>2</h4>
-                        </div>
-                     </div>
-                     <div class="owl-item active" style="width: 178px; margin-right: 20px;"><div class="item">
-                           <h4>3</h4>
-                        </div>
-                     </div>
-                     <div class="owl-item active" style="width: 178px; margin-right: 20px;"><div class="item">
-                           <h4>4</h4>
-                        </div>
-                     </div>
-                     <div class="owl-item active" style="width: 178px; margin-right: 20px;"><div class="item">
-                           <h4>5</h4>
-                        </div>
-                     </div>
-                     <div class="owl-item" style="width: 178px; margin-right: 20px;"><div class="item">
-                           <h4>6</h4>
-                        </div>
-                     </div>
-                     <div class="owl-item" style="width: 178px; margin-right: 20px;"><div class="item">
-                           <h4>7</h4>
-                        </div>
-                     </div>
-                     <div class="owl-item" style="width: 178px; margin-right: 20px;"><div class="item">
-                           <h4>8</h4>
-                        </div>
-                     </div>
-                     <div class="owl-item" style="width: 178px; margin-right: 20px;"><div class="item">
-                           <h4>9</h4>
-                        </div>
-                     </div>
-                     <div class="owl-item" style="width: 178px; margin-right: 20px;"><div class="item">
-                           <h4>10</h4>
-                        </div>
-                     </div>
-                     <div class="owl-item" style="width: 178px; margin-right: 20px;"><div class="item">
-                           <h4>11</h4>
-                        </div>
-                     </div>
-                     <div class="owl-item" style="width: 178px; margin-right: 20px;"><div class="item">
-                           <h4>12</h4>
-                        </div>
+                     <h5>Owl Carousel 2</h5>
+                     <div class="owl-theme owl-carousel">
+                        <div class="owl-content"><h2>1</h2><img src="images/welding-vector.jpg" alt="" class="img-fluid"></div>
+                        <div class="owl-content"><h2>2</h2><img src="images/welding-vector.jpg" alt="" class="img-fluid"></div>
+                        <div class="owl-content"><h2>3</h2><img src="images/welding-vector.jpg" alt="" class="img-fluid"></div>
+                        <div class="owl-content"><h2>4</h2><img src="images/welding-vector.jpg" alt="" class="img-fluid"></div>
+                        <div class="owl-content"><h2>5</h2><img src="images/welding-vector.jpg" alt="" class="img-fluid"></div>
+                        <div class="owl-content"><h2>6</h2><img src="images/welding-vector.jpg" alt="" class="img-fluid"></div>
+                        <div class="owl-content"><h2>7</h2><img src="images/welding-vector.jpg" alt="" class="img-fluid"></div>
+                        <div class="owl-content"><h2>8</h2><img src="images/welding-vector.jpg" alt="" class="img-fluid"></div>
+                        <div class="owl-content"><h2>9</h2><img src="images/welding-vector.jpg" alt="" class="img-fluid"></div>
+                        <div class="owl-content"><h2>10</h2><img src="images/welding-vector.jpg" alt="" class="img-fluid"></div>
                      </div>
                   </div>
+                  <div class="mb-2"></div>
+                  <p class="mb-1">Owl Carousel 2: <a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank">owl.carousel.js&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
+                  <p>Live Example: <a href="https://owlcarousel2.github.io/OwlCarousel2/demos/responsive.html" target="_blank">Responsive&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                  </p>
                </div>
-               <div class="owl-nav">
-                  <button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button>
-                  <button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button>
-               </div>
-               <div class="owl-dots">
-                  <button role="button" class="owl-dot active"><span></span></button>
-                  <button role="button" class="owl-dot"><span></span></button>
-                  <button role="button" class="owl-dot"><span></span></button>
-               </div>
-            </div>
-                  </div>
-                  <div class="mb-3"></div>
-               </div>
-               <!-- <p>Owl Carousel 2: <a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank">owl.carousel.js&nbsp;<i class="fas fa-external-link-alt"></i></a></p> -->
-               <p>Flickity: <a href="https://flickity.metafizzy.co/" target="_blank">flickity.metafizzy.co&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
-               <p>Demo: <a href="Edit this demo on CodePen" target="_blank">Edit this demo on CodePen&nbsp;<i class="fas fa-external-link-alt"></i></a>
-               </p>
-
             </div> <!-- End Carousel -->
+
+            <!-- Include COLLAPSE -->
+            <div w3-include-html="includes/comp-collapse.html"></div>
+            <!-- End Include COLLAPSE -->
          </main>
       </div>
    </div>
@@ -1621,11 +373,11 @@
    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
    <script src="owlcarousel/owl.carousel.min.js"></script>
 
-   <!-- W3 -->
-   <script src="js/w3.js"></script>
-
    <!-- MyScript -->
    <script src="js/script.js"></script>
+
+   <!-- W3 -->
+   <script>w3.includeHTML();</script>
 
 </body>
 </html>

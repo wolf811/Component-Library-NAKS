@@ -267,6 +267,20 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+/* css: Owl Carousel 2 */
+.owl-carousel {
+	.owl-content {
+		position: relative;
+
+		h2 {
+			position: absolute;
+			color: #fff;
+			margin-top: 1rem;
+			margin-left: 1rem;
+		}
+	}
+}
+
 
 
 
