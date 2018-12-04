@@ -1,43 +1,222 @@
 <div class="mb-5">
-   <h3 id="item-3-7">Collapse (панели, аккордеон)</h3>
-   <p>Нажав на кнопки ниже, можно показать/скрыть другой элемент с помощью изменения класса:</p>
+   <h3 id="item-3-8">Dropdowns (выпадающее меню)</h3>
+   <!-- <p>Нажав на кнопки ниже, можно показать/скрыть другой элемент с помощью изменения класса:</p>
    <ul>
       <li><span class="text-danger text-monospace">.collapse</span> скрывает контент</li>
       <li><span class="text-danger text-monospace">.collapsing</span> применяется во время переходов</li>
       <li><span class="text-danger text-monospace">.collapse.show</span> показывает контент</li>
    </ul>
-   <p>Можно использовать ссылку с атрибутом <span class="text-danger text-monospace">href</span> или кнопку с атрибутом <span class="text-danger text-monospace">data-target</span>, но при этом, в любом случае, обязательно применять <span class="text-danger text-monospace">data-toggle="collapse"</span></p>
+   <p>Можно использовать ссылку с атрибутом <span class="text-danger text-monospace">href</span> или кнопку с атрибутом <span class="text-danger text-monospace">data-target</span>, но при этом, в любом случае, обязательно применять <span class="text-danger text-monospace">data-toggle="collapse"</span></p> -->
    <div class="bd-example-row">
       <div class="bd-example">
-         <p>
-            <a class="btn btn-primary mb-3 mb-sm-0" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Ссылка с href</a>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Кнопка с data-target</button>
-         </p>
-         <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis numquam, dolorum consequuntur nobis porro, explicabo blanditiis quidem, eligendi tempore, iusto molestiae natus obcaecati reprehenderit eveniet.
+         <div class="dropdown d-sm-inline-block mb-3 mb-sm-0">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown button</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <a class="dropdown-item" href="#">Action</a>
+               <a class="dropdown-item" href="#">Another action</a>
+               <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+         </div>
+
+         <div class="dropdown d-sm-inline-block">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+               <a class="dropdown-item" href="#">Action</a>
+               <a class="dropdown-item" href="#">Another action</a>
+               <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+         </div>
+
+         <!-- Example single danger button -->
+         <!-- <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
+            <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">Action</a>
+               <a class="dropdown-item" href="#">Another action</a>
+               <a class="dropdown-item" href="#">Something else here</a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+         </div> -->
+      </div>
+      <div class="mb-3">
+         <div class="card card-panel rounded-0">
+            <div class="card-header" id="heading_28">
+               <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_28" aria-expanded="true" aria-controls="collapse_28"><i class="fas fa-code"></i> HTML</button>
+               </h5>
+            </div>
+
+            <div id="collapse_28" class="collapse" aria-labelledby="heading_28">
+               <div class="card-body">
+                  <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
+
+                     <div class="dropdown d-sm-inline-block mb-3 mb-sm-0">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown button</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                     </div>
+
+                     <div class="dropdown d-sm-inline-block">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                     </div>
+                  </textarea>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+   
+   <h4 class="text-secondary">Панели</h4>
+   <div class="bd-example-row">
+      <div class="bd-example">
+         <div class="row">
+            <div class="col-lg-6 mb-3 mb-lg-0">
+               <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                     <a class="dropdown-item" href="#">Something else here</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+               </div>
+               <div class="btn-group">
+                  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                     <a class="dropdown-item" href="#">Something else here</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+               </div>
+               <div class="btn-group">
+                  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                     <a class="dropdown-item" href="#">Something else here</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+               </div>
+               <div class="btn-group">
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                     <a class="dropdown-item" href="#">Something else here</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-6">
+               <div class="btn-group">
+                  <button type="button" class="btn btn-primary">Primary</button>
+                  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                     <a class="dropdown-item" href="#">Something else here</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+               </div>
+               <div class="btn-group">
+                  <button type="button" class="btn btn-success">Success</button>
+                  <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                     <a class="dropdown-item" href="#">Something else here</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+               </div>
+               <div class="btn-group">
+                  <button type="button" class="btn btn-warning">Warning</button>
+                  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                     <a class="dropdown-item" href="#">Something else here</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+               </div>
+               <div class="btn-group">
+                  <button type="button" class="btn btn-danger">Danger</button>
+                  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                     <a class="dropdown-item" href="#">Something else here</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
       <div class="mb-3">
          <div class="card card-panel rounded-0">
-            <div class="card-header" id="heading_25">
+            <div class="card-header" id="heading_28">
                <h5 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_25" aria-expanded="true" aria-controls="collapse_25"><i class="fas fa-code"></i> HTML</button>
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_28" aria-expanded="true" aria-controls="collapse_28"><i class="fas fa-code"></i> HTML</button>
                </h5>
             </div>
 
-            <div id="collapse_25" class="collapse" aria-labelledby="heading_25">
+            <div id="collapse_28" class="collapse" aria-labelledby="heading_28">
                <div class="card-body">
-                  <textarea class="form-control text-success rounded-0" wrap="off" rows="11" readonly>
+                  <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
 
-                     <p>
-                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Ссылка с href</a>
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Кнопка с data-target</button>
-                     </p>
-                     <div class="collapse" id="collapseExample">
-                        <div class="card card-body">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis numquam, dolorum consequuntur nobis porro, explicabo blanditiis quidem, eligendi tempore, iusto molestiae natus obcaecati reprehenderit eveniet.
+                     <!-- Example single danger button -->
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                     </div>
+
+                     <!-- Example single danger button -->
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-danger"</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href="#">Separated link</a>
                         </div>
                      </div>
                   </textarea>
@@ -48,10 +227,10 @@
       </div>
    </div>
    <p>Bootstrap:&nbsp;
-      <a href="http://getbootstrap.com/docs/4.1/components/collapse/" class="mr-2" target="_blank">Collapse&nbsp;<i class="fas fa-external-link-alt"></i></a>
+      <a href="http://getbootstrap.com/docs/4.1/components/dropdowns/" class="mr-2" target="_blank">Dropdowns&nbsp;<i class="fas fa-external-link-alt"></i></a>
    </p>
    
-   <h4 class="text-secondary">Панели</h4>
+   <!-- <h4 class="text-secondary">Панели</h4>
    <div class="bd-example-row">
       <div class="bd-example">
          <h5>Панели с использованием классов-модификаторов</h5>
@@ -236,8 +415,6 @@
          </div>
 
       </div>
-   </div>
-   <p>Bootstrap:&nbsp;
-      <a href="http://getbootstrap.com/docs/4.1/components/collapse/#accordion-example" target="_blank">Accordion example&nbsp;<i class="fas fa-external-link-alt"></i></a>
-   </p>
-</div> <!-- End Collapse
+   </div> -->
+
+</div>
