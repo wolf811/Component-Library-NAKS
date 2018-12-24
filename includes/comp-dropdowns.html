@@ -20,25 +20,12 @@
 
          <div class="dropdown d-sm-inline-block">
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
-
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                <a class="dropdown-item" href="#">Action</a>
                <a class="dropdown-item" href="#">Another action</a>
                <a class="dropdown-item" href="#">Something else here</a>
             </div>
          </div>
-
-         <!-- Example single danger button -->
-         <!-- <div class="btn-group">
-            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
-            <div class="dropdown-menu">
-               <a class="dropdown-item" href="#">Action</a>
-               <a class="dropdown-item" href="#">Another action</a>
-               <a class="dropdown-item" href="#">Something else here</a>
-               <div class="dropdown-divider"></div>
-               <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-         </div> -->
       </div>
       <div class="mb-3">
          <div class="card card-panel rounded-0">
@@ -50,9 +37,9 @@
 
             <div id="collapse_28" class="collapse" aria-labelledby="heading_28">
                <div class="card-body">
-                  <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
+                  <textarea class="form-control text-success rounded-0" wrap="off" rows="19" readonly>
 
-                     <div class="dropdown d-sm-inline-block mb-3 mb-sm-0">
+                     <div class="dropdown d-sm-inline-block">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown button</button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                            <a class="dropdown-item" href="#">Action</a>
@@ -63,7 +50,6 @@
 
                      <div class="dropdown d-sm-inline-block">
                         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
-
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                            <a class="dropdown-item" href="#">Action</a>
                            <a class="dropdown-item" href="#">Another action</a>
@@ -78,11 +64,12 @@
       </div>
    </div>
    
-   <h4 class="text-secondary">Панели</h4>
+   <!-- <h4 class="text-secondary">Кнопки с выпадающим меню</h4> -->
    <div class="bd-example-row">
       <div class="bd-example">
          <div class="row">
             <div class="col-lg-6 mb-3 mb-lg-0">
+               <h5>Одиночные кнопки</h5>
                <div class="btn-group">
                   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
                   <div class="dropdown-menu">
@@ -126,6 +113,7 @@
             </div>
 
             <div class="col-lg-6">
+               <h5>Кнопки с разделителем</h5>
                <div class="btn-group">
                   <button type="button" class="btn btn-primary">Primary</button>
                   <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -183,13 +171,13 @@
       </div>
       <div class="mb-3">
          <div class="card card-panel rounded-0">
-            <div class="card-header" id="heading_28">
+            <div class="card-header" id="heading_29">
                <h5 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_28" aria-expanded="true" aria-controls="collapse_28"><i class="fas fa-code"></i> HTML</button>
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_29" aria-expanded="true" aria-controls="collapse_29"><i class="fas fa-code"></i> HTML</button>
                </h5>
             </div>
 
-            <div id="collapse_28" class="collapse" aria-labelledby="heading_28">
+            <div id="collapse_29" class="collapse" aria-labelledby="heading_29">
                <div class="card-body">
                   <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
 
@@ -226,85 +214,100 @@
 
       </div>
    </div>
-   <p>Bootstrap:&nbsp;
-      <a href="http://getbootstrap.com/docs/4.1/components/dropdowns/" class="mr-2" target="_blank">Dropdowns&nbsp;<i class="fas fa-external-link-alt"></i></a>
-   </p>
-   
-   <!-- <h4 class="text-secondary">Панели</h4>
+
    <div class="bd-example-row">
       <div class="bd-example">
-         <h5>Панели с использованием классов-модификаторов</h5>
-         <div class="row">
-            <div class="col-lg-6 mb-3 mb-lg-0">
-               <div class="card border-success">
-                  <div class="card-header bg-success">
-                     <h5 class="mb-0">
-                        <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapse-panel-01" aria-expanded="true" aria-controls="collapseOne">Открыть панель</button>
-                     </h5>
+         <div class="row align-items-center">
+            <div class="col-sm-6 mb-2 mb-sm-0">
+               <!-- Large button groups (default and split) -->
+               <div class="btn-group">
+                  <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Large button</button>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                     <a class="dropdown-item" href="#">Something else here</a>
                   </div>
-
-                  <div id="collapse-panel-01" class="collapse">
-                     <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                     </div>
+               </div>
+               <div class="btn-group">
+                  <button class="btn btn-secondary btn-lg" type="button">Large split button</button>
+                  <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                     <a class="dropdown-item" href="#">Something else here</a>
                   </div>
                </div>
             </div>
-            <div class="col-lg-6">
-               <div class="card border-danger">
-                  <div class="card-header bg-danger">
-                     <h5 class="mb-0">
-                        <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapse-panel-02" aria-expanded="true" aria-controls="collapseOne">Открыть панель</button>
-                     </h5>
-                  </div>
 
-                  <div id="collapse-panel-02" class="collapse">
-                     <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                     </div>
+            <div class="col-sm-6">
+               <!-- Small button groups (default and split) -->
+               <div class="btn-group">
+                  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Small button</button>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                     <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+               </div>
+               <div class="btn-group">
+                  <button class="btn btn-secondary btn-sm" type="button">Small split button</button>
+                  <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                     <a class="dropdown-item" href="#">Something else here</a>
                   </div>
                </div>
             </div>
          </div>
-         
       </div>
       <div class="mb-3">
          <div class="card card-panel rounded-0">
-            <div class="card-header" id="heading_26">
+            <div class="card-header" id="heading_30">
                <h5 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_26" aria-expanded="true" aria-controls="collapse_26"><i class="fas fa-code"></i> HTML</button>
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_30" aria-expanded="true" aria-controls="collapse_30"><i class="fas fa-code"></i> HTML</button>
                </h5>
             </div>
 
-            <div id="collapse_26" class="collapse" aria-labelledby="heading_26">
+            <div id="collapse_30" class="collapse" aria-labelledby="heading_30">
                <div class="card-body">
                   <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
 
-                     <div class="card border-success">
-                        <div class="card-header bg-success">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapse-panel-01" aria-expanded="true" aria-controls="collapseOne">Открыть панель</button>
-                           </h5>
+                     <!-- Large button groups (default and split) -->
+                     <div class="btn-group">
+                        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Large button</button>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
                         </div>
-
-                        <div id="collapse-panel-01" class="collapse">
-                           <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                           </div>
+                     </div>
+                     <div class="btn-group">
+                        <button class="btn btn-secondary btn-lg" type="button">Large split button</button>
+                        <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                      </div>
 
-                     <div class="card border-danger">
-                        <div class="card-header bg-danger">
-                           <h5 class="mb-0">
-                              <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapse-panel-02" aria-expanded="true" aria-controls="collapseOne">Открыть панель</button>
-                           </h5>
+                     <!-- Small button groups (default and split) -->
+                     <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Small button</button>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
                         </div>
-
-                        <div id="collapse-panel-02" class="collapse">
-                           <div class="card-body">
-                              ...
-                           </div>
+                     </div>
+                     <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm" type="button">Small split button</button>
+                        <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                      </div>
                   </textarea>
@@ -314,107 +317,262 @@
 
       </div>
    </div>
-   
-   <h4 class="text-secondary">Аккордеон</h4>
-   <div class="bd-example-row">
-      <div class="bd-example">
-         <div class="accordion" id="accordionExample">
-            <div class="card border-secondary">
-               <div class="card-header bg-secondary" id="headingOne">
-                  <h5 class="mb-0">
-                     <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Панель #1</button>
-                  </h5>
-               </div>
 
-               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                  <div class="card-body">
-                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-               </div>
+   <h4 class="text-secondary">Расположения выпадающего меню</h4>
+   <div class="bd-example-row">
+      <p>Для изменения расположения выпадающего меню относительно кнопки необходимо добавлять следующие классы или атрибуты:</p>
+      <ul>
+         <li>добавив к классу <span class="text-danger text-monospace">.dropdown-menu</span> класс <span class="text-danger text-monospace">.dropdown-menu-right</span> - меню выровняется по правому краю;</li>
+         <li>добавив к кнопке атрибут <span class="text-danger text-monospace">data-offset="10,20"</span>, можно  сместить выпадающее меню согласно значений, заданных атрибутом;</li>
+         <li>к классу <span class="text-danger text-monospace">.btn-group</span> добавить класс <span class="text-danger text-monospace">.dropup</span> - меню сверху;</li>
+         <li>к классу <span class="text-danger text-monospace">.btn-group</span> добавить класс <span class="text-danger text-monospace">.dropleft</span> - меню слева;</li>
+         <li>к классу <span class="text-danger text-monospace">.btn-group</span> добавить класс <span class="text-danger text-monospace">.dropright</span> - меню справа.</li>
+      </ul>
+      <div class="bd-example">
+         <h5 class="text-secondary"></h5>
+         <!-- Right-aligned menu -->
+         <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Right-aligned menu</button>
+            <div class="dropdown-menu dropdown-menu-right">
+               <button class="dropdown-item" type="button">Action</button>
+               <button class="dropdown-item" type="button">Another action</button>
+               <button class="dropdown-item" type="button">Something else here</button>
             </div>
-            <div class="card border-secondary">
-               <div class="card-header bg-secondary" id="headingTwo">
-                  <h5 class="mb-0">
-                     <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Панель #2</button>
-                  </h5>
-               </div>
-               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                  <div class="card-body">
-                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-               </div>
+         </div>
+         <!-- Default offset button -->
+         <div class="dropdown" style="display: inline-block;">
+            <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">Offset</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+               <a class="dropdown-item" href="#">Action</a>
+               <a class="dropdown-item" href="#">Another action</a>
+               <a class="dropdown-item" href="#">Something else here</a>
             </div>
-            <div class="card border-secondary">
-               <div class="card-header bg-secondary" id="headingThree">
-                  <h5 class="mb-0">
-                     <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Панель #3</button>
-                  </h5>
-               </div>
-               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                  <div class="card-body">
-                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-               </div>
+         </div>
+         <!-- Default dropup button -->
+         <div class="btn-group dropup mb-2 mb-sm-0">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</button>
+            <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">Action</a>
+               <a class="dropdown-item" href="#">Another action</a>
+               <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+         </div>
+         <!-- Default dropleft button -->
+         <div class="btn-group dropleft mb-2 mb-sm-0">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+            <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">Action</a>
+               <a class="dropdown-item" href="#">Another action</a>
+               <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+         </div>
+         <!-- Default dropright button -->
+         <div class="btn-group dropright mb-2 mb-sm-0">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropright</button>
+            <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">Action</a>
+               <a class="dropdown-item" href="#">Another action</a>
+               <a class="dropdown-item" href="#">Something else here</a>
             </div>
          </div>
       </div>
       <div class="mb-3">
          <div class="card card-panel rounded-0">
-            <div class="card-header" id="heading_27">
+            <div class="card-header" id="heading_31">
                <h5 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_27" aria-expanded="true" aria-controls="collapse_27"><i class="fas fa-code"></i> HTML</button>
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_31" aria-expanded="true" aria-controls="collapse_31"><i class="fas fa-code"></i> HTML</button>
                </h5>
             </div>
 
-            <div id="collapse_27" class="collapse" aria-labelledby="heading_27">
+            <div id="collapse_31" class="collapse" aria-labelledby="heading_31">
                <div class="card-body">
                   <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
 
-                     <div class="accordion" id="accordionExample">
-                        <div class="card border-secondary">
-                           <div class="card-header bg-secondary" id="headingOne">
-                              <h5 class="mb-0">
-                                 <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Панель #1</button>
-                              </h5>
-                           </div>
-
-                           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                              <div class="card-body">
-                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                           </div>
-                        </div>
-                        <div class="card border-secondary">
-                           <div class="card-header bg-secondary" id="headingTwo">
-                              <h5 class="mb-0">
-                                 <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Панель #2</button>
-                              </h5>
-                           </div>
-                           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                              <div class="card-body">
-                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                           </div>
-                        </div>
-                        <div class="card border-secondary">
-                           <div class="card-header bg-secondary" id="headingThree">
-                              <h5 class="mb-0">
-                                 <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Панель #3</button>
-                              </h5>
-                           </div>
-                           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                              <div class="card-body">
-                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                           </div>
+                     <!-- Right-aligned menu -->
+                     <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Right-aligned menu</button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                           <button class="dropdown-item" type="button">Action</button>
+                           <button class="dropdown-item" type="button">Another action</button>
+                           <button class="dropdown-item" type="button">Something else here</button>
                         </div>
                      </div>
+
+                     <!-- Default offset button -->
+                     <div class="dropdown">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">Offset</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                     </div>
+
+                     <!-- Default dropup button -->
+                     <div class="btn-group dropup mb-2 mb-sm-0">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</button>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                     </div>
+
+                     <!-- Default dropleft button -->
+                     <div class="btn-group dropleft mb-2 mb-sm-0">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                     </div>
+
+                     <!-- Default dropright button -->
+                     <div class="btn-group dropright mb-2 mb-sm-0">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropright</button>
+                        <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                     </div>         
                   </textarea>
                </div>
             </div>
          </div>
 
       </div>
-   </div> -->
+   </div>
 
+   <h4 class="text-secondary">Некоторые дополнительные возможности выпадающего меню</h4>
+   <div class="bd-example-row">
+      <ul>
+         <li>Форма вместо привычного меню</li>
+         <li>Активный пункт меню с классом <span class="text-danger text-monospace">.active</span></li>
+         <li>Неактивный пункт меню с классом <span class="text-danger text-monospace">.disabled</span></li>
+         <li>Возможность добавить заголовок с классом <span class="text-danger text-monospace">.dropdown-header</span> или текст с классом <span class="text-danger text-monospace">.dropdown-item-text</span></li>
+         <li>Возможность добавить разделитель между пунктами меню с помощью <span class="text-danger text-monospace">div</span> с классом <span class="text-danger text-monospace">.dropdown-divider</span></li>
+      </ul>
+      <div class="bd-example">
+         <div class="row align-items-center">
+            <div class="col-sm-3 mb-2 mb-sm-0">
+               <form class="dropdown-menu p-4" style="position: static; display: block;">
+                  <div class="form-group">
+                     <label for="exampleDropdownFormEmail2">Email address</label>
+                     <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleDropdownFormPassword2">Password</label>
+                     <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                  </div>
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                     <label class="form-check-label mb-2" for="dropdownCheck2">Remember me</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+               </form>
+            </div>
+            <div class="col-sm-2 mb-2 mb-sm-0">
+               <div class="dropdown-menu" style="position: static; display: block;">
+                  <a class="dropdown-item" href="#">Regular link</a>
+                  <a class="dropdown-item active" href="#">Active link</a>
+                  <a class="dropdown-item" href="#">Another link</a>
+               </div>
+            </div>
+            <div class="col-sm-2 mb-2 mb-sm-0">
+               <div class="dropdown-menu" style="position: static; display: block;">
+                  <a class="dropdown-item" href="#">Regular link</a>
+                  <a class="dropdown-item disabled" href="#">Disabled link</a>
+                  <a class="dropdown-item" href="#">Another link</a>
+               </div>
+            </div>
+            <div class="col-sm-2">
+               <div class="dropdown-menu" style="position: static; display: block;">
+                  <h4 class="dropdown-header">Dropdown header</h4>
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+               </div>
+            </div>
+            <div class="col-sm-3">
+               <div class="dropdown-menu" style="position: static; display: block;">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="mb-3">
+         <div class="card card-panel rounded-0">
+            <div class="card-header" id="heading_32">
+               <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse_32" aria-expanded="true" aria-controls="collapse_32"><i class="fas fa-code"></i> HTML</button>
+               </h5>
+            </div>
+
+            <div id="collapse_32" class="collapse" aria-labelledby="heading_32">
+               <div class="card-body">
+                  <textarea class="form-control text-success rounded-0" wrap="off" rows="20" readonly>
+                     
+                     <!-- Form within a dropdown menu -->
+                     <form class="dropdown-menu p-4">
+                        <div class="form-group">
+                           <label for="exampleDropdownFormEmail2">Email address</label>
+                           <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleDropdownFormPassword2">Password</label>
+                           <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                           <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                           <label class="form-check-label mb-2" for="dropdownCheck2">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                     </form>   
+                     
+                     <!-- Add .active to items in the dropdown -->
+                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Regular link</a>
+                        <a class="dropdown-item active" href="#">Active link</a>
+                        <a class="dropdown-item" href="#">Another link</a>
+                     </div>  
+
+                     <!-- Add .disabled to items in the dropdown -->
+                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Regular link</a>
+                        <a class="dropdown-item disabled" href="#">Disabled link</a>
+                        <a class="dropdown-item" href="#">Another link</a>
+                     </div>
+
+                     <!-- Add a header to sections -->
+                     <div class="dropdown-menu">
+                        <h6 class="dropdown-header">Dropdown header</h6>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                     </div>  
+
+                     <!-- Divider -->
+                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                     </div>        
+                  </textarea>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+   <p>Bootstrap:&nbsp;
+      <a href="http://getbootstrap.com/docs/4.1/components/dropdowns/" class="mr-2" target="_blank">Dropdowns&nbsp;<i class="fas fa-external-link-alt"></i></a>
+   </p>
+   
 </div>
